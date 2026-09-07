@@ -1,3 +1,55 @@
+<!-- SECTION: QUICK_NOTES -->
+<div class="callout-note">
+<strong>💡 Định Nghĩa Cô Đọng:</strong><br>
+Muốn cộng hay trừ hai đa thức, ta viết chúng trong dấu ngoặc, dùng quy tắc phá ngoặc, sau đó nhóm các hạng tử đồng dạng lại rồi thu gọn.
+</div>
+
+#### 📐 Công Thức Trọng Tâm:
+<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
+• <strong>Quy tắc bỏ dấu ngoặc:</strong>
+  - Trước dấu ngoặc có dấu <strong>$+$</strong>: Giữ nguyên dấu tất cả các hạng tử:
+    $$(A + B - C) = A + B - C$$
+  - Trước dấu ngoặc có dấu <strong>$-$</strong>: Đổi dấu TẤT CẢ các hạng tử bên trong:
+    $$-(A + B - C) = -A - B + C$$
+• <strong>Phép tính tổng hiệu:</strong>
+  $$P \pm Q = (\text{Biểu thức } P) \pm (\text{Biểu thức } Q)$$
+</div>
+
+<div class="callout-tip">
+<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
+❌ <strong>Lỗi kinh điển:</strong> Khi trừ đa thức, chỉ đổi dấu hạng tử đầu tiên mà quên đổi dấu các hạng tử đằng sau!<br>
+<em>Ví dụ sai:</em> $-(x^2 - 2xy + y^2) = -x^2 - 2xy + y^2$ (SAI HOÀN TOÀN).<br>
+<em>Cách sửa đúng:</em> $-(x^2 - 2xy + y^2) = -x^2 + 2xy - y^2$.
+</div>
+
+<!-- SECTION: STEP_EXAMPLES -->
+### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
+
+#### 📌 Ví dụ 1: Tính tổng và hiệu của hai đa thức nhiều biến
+Cho hai đa thức:
+$$P = 3x^2 - 2xy + y^2 \quad \text{và} \quad Q = x^2 + 2xy - 3y^2$$
+Tính $P + Q$ và $P - Q$.
+
+<div class="example-card">
+<strong>🔍 Phương pháp tư duy:</strong> Đặt hai đa thức vào ngoặc. Với $P - Q$, chú ý đổi dấu toàn bộ các hạng tử của $Q$ khi bỏ ngoặc.<br><br>
+<strong>📝 Lời giải chi tiết:</strong><br>
+• <strong>Bước 1 (Tính tổng $P + Q$):</strong>
+  $$\begin{aligned}
+  P + Q &= (3x^2 - 2xy + y^2) + (x^2 + 2xy - 3y^2) \\
+        &= (3x^2 + x^2) + (-2xy + 2xy) + (y^2 - 3y^2) \\
+        &= 4x^2 + 0 - 2y^2 = 4x^2 - 2y^2
+  \end{aligned}$$
+• <strong>Bước 2 (Tính hiệu $P - Q$ - Đổi dấu ngoặc thứ hai):</strong>
+  $$\begin{aligned}
+  P - Q &= (3x^2 - 2xy + y^2) - (x^2 + 2xy - 3y^2) \\
+        &= 3x^2 - 2xy + y^2 - x^2 - 2xy + 3y^2 \\
+        &= (3x^2 - x^2) + (-2xy - 2xy) + (y^2 + 3y^2) \\
+        &= 2x^2 - 4xy + 4y^2
+  \end{aligned}$$
+• <strong>Kết luận:</strong> $P + Q = <strong>4x^2 - 2y^2</strong>$ và $P - Q = <strong>2x^2 - 4xy + 4y^2</strong>$.
+</div>
+
+<!-- SECTION: SGK_CONTENT -->
 # BÀI 3. PHÉP CỘNG VÀ PHÉP TRỪ ĐA THỨC
 
 | Khái niệm, thuật ngữ | Kiến thức, kĩ năng |

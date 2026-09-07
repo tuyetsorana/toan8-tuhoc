@@ -1,3 +1,61 @@
+<!-- SECTION: QUICK_NOTES -->
+<div class="callout-note">
+<strong>💡 Định Nghĩa Cô Đọng:</strong><br>
+• <strong>Nhân đơn thức với đa thức:</strong> Nhân đơn thức với từng hạng tử của đa thức rồi cộng các tích lại.<br>
+• <strong>Nhân đa thức với đa thức:</strong> Lấy mỗi hạng tử của đa thức này nhân lần lượt với từng hạng tử của đa thức kia rồi cộng các kết quả lại.
+</div>
+
+#### 📐 Công Thức Trọng Tâm:
+<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
+• <strong>Đơn thức $\times$ Đa thức:</strong>
+  $$A(B + C) = A \cdot B + A \cdot C$$
+• <strong>Đa thức $\times$ Đa thức:</strong>
+  $$(A + B)(C + D) = A \cdot C + A \cdot D + B \cdot C + B \cdot D$$
+• <strong>Nhân luỹ thừa cùng cơ số:</strong>
+  $$x^m \cdot x^n = x^{m+n} \quad \text{(Cộng số mũ, không phải nhân số mũ!)}$$
+</div>
+
+<div class="callout-tip">
+<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
+❌ <strong>Lỗi 1:</strong> Nhân số mũ: $x^2 \cdot x^3 = x^6$ (SAI) ➔ Đúng phải là $x^{2+3} = x^5$.<br>
+❌ <strong>Lỗi 2:</strong> Bỏ sót hạng tử: $(A+B)(C+D)$ phải sinh ra đủ 4 tích trước khi thu gọn.<br>
+❌ <strong>Lỗi 3:</strong> Quên quy tắc dấu: $(-a) \cdot (-b) = +ab$; $(-a) \cdot b = -ab$.
+</div>
+
+<!-- SECTION: STEP_EXAMPLES -->
+### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
+
+#### 📌 Ví dụ 1: Nhân đơn thức với đa thức
+Thực hiện phép tính: $$P = 2xy(3x^2 - xy + 4y^2)$$
+
+<div class="example-card">
+<strong>🔍 Phương pháp tư duy:</strong> Lấy $2xy$ nhân lần lượt với $3x^2$, $-xy$ và $+4y^2$.<br><br>
+<strong>📝 Lời giải chi tiết:</strong><br>
+• <strong>Bước 1 (Áp dụng tính chất phân phối):</strong>
+  $$P = (2xy) \cdot (3x^2) + (2xy) \cdot (-xy) + (2xy) \cdot (4y^2)$$
+• <strong>Bước 2 (Nhân hệ số với hệ số, biến với biến):</strong>
+  $$P = (2 \cdot 3)(x \cdot x^2)y + [2 \cdot (-1)](x \cdot x)(y \cdot y) + (2 \cdot 4)x(y \cdot y^2)$$
+• <strong>Bước 3 (Thu gọn các luỹ thừa):</strong>
+  $$P = 6x^3y - 2x^2y^2 + 8xy^3$$
+• <strong>Kết luận:</strong> Tích là <strong>$6x^3y - 2x^2y^2 + 8xy^3$</strong>.
+</div>
+
+#### 📌 Ví dụ 2: Nhân hai đa thức và rút gọn
+Rút gọn biểu thức: $$Q = (2x - y)(x + 3y) - 2x^2$$
+
+<div class="example-card">
+<strong>🔍 Phương pháp tư duy:</strong> Khai triển tích $(2x - y)(x + 3y)$ ra 4 hạng tử rồi trừ $2x^2$ và thu gọn.<br><br>
+<strong>📝 Lời giải chi tiết:</strong><br>
+• <strong>Bước 1 (Nhân đa thức với đa thức):</strong>
+  $$(2x - y)(x + 3y) = 2x \cdot x + 2x \cdot 3y - y \cdot x - y \cdot 3y = 2x^2 + 6xy - xy - 3y^2$$
+• <strong>Bước 2 (Thu gọn tích vừa nhân):</strong>
+  $$2x^2 + 5xy - 3y^2$$
+• <strong>Bước 3 (Trừ $2x^2$ của đề bài):</strong>
+  $$Q = (2x^2 + 5xy - 3y^2) - 2x^2 = (2x^2 - 2x^2) + 5xy - 3y^2 = 5xy - 3y^2$$
+• <strong>Kết luận:</strong> Biểu thức thu gọn là <strong>$5xy - 3y^2$</strong>.
+</div>
+
+<!-- SECTION: SGK_CONTENT -->
 # BÀI 4. PHÉP NHÂN ĐA THỨC
 
 | Khái niệm, thuật ngữ | Kiến thức, kĩ năng |

@@ -1,3 +1,61 @@
+<!-- SECTION: QUICK_NOTES -->
+<div class="callout-note">
+<strong>💡 Định Nghĩa Cô Đọng:</strong><br>
+• <strong>Đơn thức</strong> là biểu thức đại số chỉ gồm một số, một biến, hoặc tích giữa các số và các biến.<br>
+• <strong>Đơn thức thu gọn</strong> là đơn thức mà mỗi biến chỉ xuất hiện 1 lần dưới dạng luỹ thừa với số mũ nguyên dương.
+</div>
+
+#### 📐 Công Thức Trọng Tâm:
+<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
+• <strong>Dạng chuẩn đơn thức thu gọn:</strong> $$A = a \cdot x^m y^n z^p \quad (a \ne 0)$$
+  - $a$ là <strong>hệ số</strong>, $x^m y^n z^p$ là <strong>phần biến</strong>.<br>
+• <strong>Bậc của đơn thức:</strong> $$\text{Bậc} = m + n + p \quad \text{(Tổng số mũ của tất cả các biến)}$$
+• <strong>Cộng / trừ đơn thức đồng dạng:</strong> (cùng phần biến, hệ số $\ne 0$)
+  $$a \cdot X \pm b \cdot X = (a \pm b) \cdot X$$
+  <em>(Cộng/trừ phần hệ số, GIỮ NGUYÊN phần biến)</em>
+</div>
+
+<div class="callout-tip">
+<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
+❌ <strong>Lỗi 1:</strong> Chưa thu gọn đơn thức đã vội kết luận bậc. <em>(Ví dụ: $2x \cdot 3x^2$ có bậc $1 + 2 = 3$, không được nói là bậc 1).</em><br>
+❌ <strong>Lỗi 2:</strong> Nhầm số $0$ có bậc $0$. <em>Ghi nhớ: Số thực khác $0$ có bậc $0$; còn riêng số $0$ thì <strong>không có bậc</strong>!</em><br>
+❌ <strong>Lỗi 3:</strong> Khi cộng đơn thức đồng dạng lại cộng luôn cả số mũ: $2x^2 + 3x^2 = 5x^4$ (SAI) ➔ Đúng phải là: $5x^2$.
+</div>
+
+<!-- SECTION: STEP_EXAMPLES -->
+### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
+
+#### 📌 Ví dụ 1: Thu gọn đơn thức và xác định hệ số, phần biến, bậc
+Cho đơn thức: $$M = -2x^2y \cdot \frac{3}{4}xy^3$$
+Hãy thu gọn $M$, sau đó chỉ rõ hệ số, phần biến và bậc.
+
+<div class="example-card">
+<strong>🔍 Phương pháp tư duy:</strong> Nhóm các hệ số số học nhân với nhau, nhóm các biến cùng tên nhân với nhau rồi áp dụng quy tắc $x^m \cdot x^n = x^{m+n}$.<br><br>
+<strong>📝 Lời giải chi tiết:</strong><br>
+• <strong>Bước 1 (Nhóm phần số và phần biến):</strong>
+  $$M = \left(-2 \cdot \frac{3}{4}\right) \cdot (x^2 \cdot x) \cdot (y \cdot y^3)$$
+• <strong>Bước 2 (Thực hiện nhân luỹ thừa):</strong>
+  $$M = -\frac{3}{2}x^{2+1}y^{1+3} = -\frac{3}{2}x^3y^4$$
+• <strong>Kết luận:</strong>
+  - Hệ số: <strong>$-\frac{3}{2}$</strong><br>
+  - Phần biến: <strong>$x^3y^4$</strong><br>
+  - Bậc của đơn thức: $3 + 4 =$ <strong>$7$</strong>
+</div>
+
+#### 📌 Ví dụ 2: Cộng trừ các đơn thức đồng dạng
+Thu gọn biểu thức: $$P = 4x^2y^3 - 7x^2y^3 + 2x^2y^3$$
+
+<div class="example-card">
+<strong>🔍 Phương pháp tư duy:</strong> Kiểm tra phần biến thấy đều là $x^2y^3$ (đồng dạng). Ta chỉ cần cộng trừ các hệ số và giữ nguyên phần biến.<br><br>
+<strong>📝 Lời giải chi tiết:</strong><br>
+• <strong>Bước 1 (Đặt nhân tử chung là phần biến):</strong>
+  $$P = (4 - 7 + 2)x^2y^3$$
+• <strong>Bước 2 (Tính toán hệ số):</strong>
+  $$4 - 7 + 2 = -1 \implies P = -1x^2y^3 = -x^2y^3$$
+• <strong>Kết luận:</strong> Biểu thức thu gọn là <strong>$-x^2y^3$</strong>.
+</div>
+
+<!-- SECTION: SGK_CONTENT -->
 # CHƯƠNG I. ĐA THỨC
 
 > *Ở lớp 7, các em đã học về đa thức một biến. Khái niệm và các phép toán đối với đa thức nhiều biến cũng tương tự như đa thức một biến. Tuy nhiên, hai chữ "nhiều biến" chắc chắn sẽ đem lại những sự khác biệt nhất định. Học chương này, các em hãy để ý xem giữa đa thức nhiều biến và đa thức một biến có những gì giống và khác nhau nhé.*

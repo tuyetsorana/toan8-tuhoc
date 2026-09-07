@@ -111,6 +111,22 @@ st.markdown("""
         font-size: 0.82rem;
         display: inline-block;
     }
+
+    /* KaTeX responsive trên màn hình điện thoại */
+    .katex-display {
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        padding: 0.4rem 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* Làm đẹp Tab con */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 6px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        font-weight: 600;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -171,24 +187,18 @@ SGK_SOLUTIONS = load_sgk_solutions()
 EXTRA_EXERCISES = load_extra_exercises()
 LESSON_VIDEOS = load_lesson_videos()
 
-def load_markdown_content(file_name: str) -> str:
-    """Đọc file markdown bài học và chuyển đổi đường dẫn ảnh sang Base64 để hiển thị trực tiếp"""
-    file_path = os.path.join(CONTENT_DIR, file_name)
-    if not os.path.exists(file_path):
-        return f"⚠️ Không tìm thấy file nội dung: {file_name}"
+def process_markdown_formatting(content: str) -> str:
+    """Chuyển đổi đường dẫn ảnh sang Base64 và định dạng khung ghi nhớ"""
+    if not content:
+        return ""
         
-    with open(file_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
     # Tìm và thay thế đường dẫn ảnh sang Base64 data URI
     def replace_image_with_base64(match):
         alt_text = match.group(1)
         rel_path = match.group(2)
         
-        # Chuẩn hóa đường dẫn ảnh
         norm_path = os.path.normpath(os.path.join(CONTENT_DIR, rel_path))
         if not os.path.exists(norm_path):
-            # Thử tìm trong thư mục assets của app
             candidate = os.path.join(ASSETS_DIR, "images", "tap1", os.path.basename(rel_path))
             if os.path.exists(candidate):
                 norm_path = candidate
@@ -217,6 +227,49 @@ def load_markdown_content(file_name: str) -> str:
                      content)
 
     return content
+
+@st.cache_data
+def load_lesson_sections(file_name: str) -> dict:
+    """Đọc file markdown bài học và bóc tách thành 3 phân vùng: quick_notes, step_examples, sgk_content"""
+    file_path = os.path.join(CONTENT_DIR, file_name)
+    if not os.path.exists(file_path):
+        return {
+            "quick_notes": f"⚠️ Không tìm thấy file nội dung: {file_name}",
+            "step_examples": "",
+            "sgk_content": "",
+            "full_text": ""
+        }
+        
+    with open(file_path, "r", encoding="utf-8") as f:
+        raw = f.read()
+
+    quick_notes = ""
+    step_examples = ""
+    sgk_content = raw
+
+    if "<!-- SECTION: QUICK_NOTES -->" in raw and "<!-- SECTION: SGK_CONTENT -->" in raw:
+        try:
+            parts = raw.split("<!-- SECTION: QUICK_NOTES -->")[1]
+            p_notes, p_rest = parts.split("<!-- SECTION: STEP_EXAMPLES -->")
+            p_examples, p_sgk = p_rest.split("<!-- SECTION: SGK_CONTENT -->")
+            quick_notes = p_notes.strip()
+            step_examples = p_examples.strip()
+            sgk_content = p_sgk.strip()
+        except Exception:
+            quick_notes = ""
+            step_examples = ""
+            sgk_content = raw
+
+    return {
+        "quick_notes": process_markdown_formatting(quick_notes),
+        "step_examples": process_markdown_formatting(step_examples),
+        "sgk_content": process_markdown_formatting(sgk_content),
+        "full_text": process_markdown_formatting(raw)
+    }
+
+def load_markdown_content(file_name: str) -> str:
+    """Hàm tương thích ngược"""
+    return load_lesson_sections(file_name)["sgk_content"]
 
 # ================= SIDEBAR =================
 with st.sidebar:
@@ -315,33 +368,54 @@ tab1, tab2, tab3, tab4 = st.tabs([
 
 # ================= TAB 1: BÀI HỌC & LÝ THUYẾT =================
 with tab1:
-    content_md = load_markdown_content(current_lesson["file"])
-    st.markdown(content_md, unsafe_allow_html=True)
+    sections = load_lesson_sections(current_lesson["file"])
     
-    st.markdown("---")
+    # 3 Thẻ trực quan chia nhỏ bài học
+    theory_tab1, theory_tab2, theory_tab3 = st.tabs([
+        "💡 Ghi nhớ nhanh",
+        "📝 Ví dụ từng bước",
+        "📖 Đọc thêm SGK"
+    ])
     
-    # 🎥 Mục mở rộng: Video Thầy/Cô giảng chi tiết
-    lesson_vid = LESSON_VIDEOS.get(current_lesson["file"])
-    if lesson_vid:
-        with st.expander("🎥 Chưa hiểu bài? Bấm xem Video Thầy/Cô giảng chi tiết", expanded=False):
-            st.markdown(f"#### 🎬 {lesson_vid['video_title']}")
-            st.markdown(f"👨‍🏫 **Giáo viên / Kênh phát hành:** `{lesson_vid['teacher_channel']}`")
-            if "description" in lesson_vid:
-                st.info(f"📌 **Nội dung trọng tâm video:** {lesson_vid['description']}")
-                
-            # Nhúng trực tiếp video YouTube để học sinh xem ngay trong app
-            st.video(lesson_vid["youtube_url"])
+    with theory_tab1:
+        if sections["quick_notes"]:
+            st.markdown(sections["quick_notes"], unsafe_allow_html=True)
+        else:
+            st.info("Nội dung tóm tắt cốt lõi của bài học đang được chuẩn bị.")
             
-            # Nút phụ mở xem trên YouTube ở tab mới
-            col_v1, col_v2 = st.columns([2, 3])
-            with col_v1:
-                st.link_button("🌐 Mở xem trên YouTube", lesson_vid["youtube_url"], use_container_width=True)
-            with col_v2:
-                st.caption("*(Nhấn để mở xem trực tiếp trên ứng dụng YouTube hoặc phóng to toàn màn hình)*")
+        # 🎥 Mục video bài giảng giáo viên tích hợp ngay dưới phần ghi nhớ
+        lesson_vid = LESSON_VIDEOS.get(current_lesson["file"])
+        if lesson_vid:
+            st.markdown("---")
+            with st.expander("🎥 Chưa hiểu bài? Bấm xem Video Thầy/Cô giảng chi tiết", expanded=False):
+                st.markdown(f"#### 🎬 {lesson_vid['video_title']}")
+                st.markdown(f"👨‍🏫 **Giáo viên / Kênh phát hành:** `{lesson_vid['teacher_channel']}`")
+                if "description" in lesson_vid:
+                    st.info(f"📌 **Nội dung trọng tâm video:** {lesson_vid['description']}")
+                    
+                # Nhúng trực tiếp video YouTube để học sinh xem ngay trong app
+                st.video(lesson_vid["youtube_url"])
                 
-        st.markdown("---")
+                # Nút phụ mở xem trên YouTube ở tab mới
+                col_v1, col_v2 = st.columns([2, 3])
+                with col_v1:
+                    st.link_button("🌐 Mở xem trên YouTube", lesson_vid["youtube_url"], use_container_width=True)
+                with col_v2:
+                    st.caption("*(Nhấn để mở xem trực tiếp trên ứng dụng YouTube hoặc phóng to toàn màn hình)*")
+
+    with theory_tab2:
+        if sections["step_examples"]:
+            st.markdown(sections["step_examples"], unsafe_allow_html=True)
+        else:
+            st.info("Ví dụ mẫu biến đổi từng bước của bài học đang được cập nhật.")
+
+    with theory_tab3:
+        st.caption("💡 Toàn bộ nội dung sách giáo khoa gốc được sắp xếp gọn trong hộp bên dưới. Bấm mở để tra cứu chi tiết các hoạt động, tranh luận và bài tập:")
+        with st.expander("📖 Xem toàn bộ nội dung sách giáo khoa", expanded=False):
+            st.markdown(sections["sgk_content"], unsafe_allow_html=True)
         
-    st.info("💡 **Bước tiếp theo:** Hãy chuyển sang tab **'✍️ Ví dụ & Phương pháp giải'** để nắm cách tư duy từng bước, sau đó thử sức ở tab **'🎯 Luyện tập'** nhé!")
+    st.markdown("---")
+    st.info("👉 **Bước tiếp theo:** Hãy chuyển sang tab **'🎯 Luyện tập & Tự chấm điểm'** để giải bài tập SGK và tham gia Đấu trường trắc nghiệm nhé!")
 
 # ================= TAB 2: VÍ DỤ & PHƯƠNG PHÁP GIẢI =================
 with tab2:
@@ -599,7 +673,7 @@ with tab4:
                 tutor_reply = ai_tutor.generate_tutor_response(
                     api_key=api_key_input,
                     lesson_title=current_lesson["title"],
-                    lesson_summary=content_md[:600],
+                    lesson_summary=sections.get("quick_notes", "")[:1000] or sections.get("sgk_content", "")[:600],
                     chat_history=st.session_state[session_chat_key],
                     user_message=user_input
                 )
