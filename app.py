@@ -269,16 +269,30 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("#### 🤖 Cấu Hình Gia Sư AI")
-    api_key_input = st.text_input(
-        "GEMINI_API_KEY (Tuỳ chọn):",
-        type="password",
-        help="Nhập Gemini API Key để trò chuyện trực tiếp với Thầy Pi. Nếu chưa có, ứng dụng sẽ chạy ở Chế độ Offline Socratic."
-    )
     
-    if api_key_input:
-        st.success("🟢 Gia sư AI Trực tuyến (Gemini)")
+    # Tự động nhận diện API Key từ Streamlit Secrets hoặc biến môi trường
+    cloud_api_key = ""
+    try:
+        if hasattr(st, "secrets") and "GEMINI_API_KEY" in st.secrets:
+            cloud_api_key = st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        pass
+    if not cloud_api_key:
+        cloud_api_key = os.getenv("GEMINI_API_KEY", "")
+
+    if cloud_api_key:
+        api_key_input = cloud_api_key
+        st.success("🟢 Gia sư AI Trực tuyến (Đã kết nối qua Secrets)")
     else:
-        st.info("🟡 Chế độ Offline Socratic (Sẵn sàng)")
+        api_key_input = st.text_input(
+            "GEMINI_API_KEY (Tuỳ chọn):",
+            type="password",
+            help="Nhập Gemini API Key để trò chuyện trực tiếp với Thầy Pi. Nếu chưa có, ứng dụng sẽ chạy ở Chế độ Offline Socratic."
+        )
+        if api_key_input:
+            st.success("🟢 Gia sư AI Trực tuyến (Gemini)")
+        else:
+            st.info("🟡 Chế độ Offline Socratic (Sẵn sàng)")
 
 # Đánh dấu bài học bắt đầu học
 db.mark_lesson_in_progress(current_lesson["id"], current_lesson["title"])
