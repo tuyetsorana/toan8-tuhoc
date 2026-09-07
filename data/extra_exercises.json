@@ -1,0 +1,1058 @@
+{
+  "Bai_01_Don_thuc.md": [
+    {
+      "id": "B01_E01",
+      "level": "Dễ",
+      "question": "Biểu thức nào sau đây là đơn thức nhiều biến?",
+      "options": [
+        "A. $3x + 2y$",
+        "B. $-\\frac{5}{7}x^2y^3$",
+        "C. $\\frac{2x}{y}$",
+        "D. $x^2 - 4$"
+      ],
+      "correct": 1,
+      "explanation": "Đơn thức là biểu thức đại số chỉ gồm một số, hoặc một biến, hoặc một tích giữa các số và các biến. Biểu thức $-\\frac{5}{7}x^2y^3$ là tích giữa số $-\\frac{5}{7}$ và các biến $x, y$ nên là đơn thức. Các đáp án khác có phép cộng, trừ hoặc chia cho biến."
+    },
+    {
+      "id": "B01_E02",
+      "level": "Dễ",
+      "question": "Hệ số và phần biến của đơn thức $-4x^3y^2z$ lần lượt là:",
+      "options": [
+        "A. Hệ số: $4$, phần biến: $x^3y^2z$",
+        "B. Hệ số: $-4$, phần biến: $x^3y^2$",
+        "C. Hệ số: $-4$, phần biến: $x^3y^2z$",
+        "D. Hệ số: $-4x^3$, phần biến: $y^2z$"
+      ],
+      "correct": 2,
+      "explanation": "Trong đơn thức thu gọn $-4x^3y^2z$, phần hệ số là số kèm dấu $-4$, còn phần biến là tích các luỹ thừa của các biến $x^3y^2z$."
+    },
+    {
+      "id": "B01_E03",
+      "level": "Dễ",
+      "question": "Bậc của đơn thức $7x^2y^4z$ là:",
+      "options": [
+        "A. 6",
+        "B. 7",
+        "C. 8",
+        "D. 4"
+      ],
+      "correct": 1,
+      "explanation": "Bậc của đơn thức có hệ số khác 0 là tổng số mũ của tất cả các biến có trong đơn thức đó. Ta có biến $x$ có số mũ 2, $y$ có số mũ 4, $z$ có số mũ 1 (ngầm hiểu $z = z^1$). Do đó bậc là $2 + 4 + 1 = 7$."
+    },
+    {
+      "id": "B01_E04",
+      "level": "Dễ",
+      "question": "Cặp đơn thức nào sau đây là hai đơn thức đồng dạng?",
+      "options": [
+        "A. $2x^3y$ và $2xy^3$",
+        "B. $-5x^2y^3$ và $3x^2y^3$",
+        "C. $4x^2y$ và $4x^2z$",
+        "D. $0,5xy^2$ và $-0,5x^2y^2$"
+      ],
+      "correct": 1,
+      "explanation": "Hai đơn thức đồng dạng là hai đơn thức có hệ số khác 0 và có cùng phần biến. Hai đơn thức $-5x^2y^3$ và $3x^2y^3$ đều có chung phần biến là $x^2y^3$."
+    },
+    {
+      "id": "B01_E05",
+      "level": "Vừa",
+      "question": "Thu gọn đơn thức $A = -\\frac{2}{3}x^2y \\cdot 9xy^3$, ta được kết quả là:",
+      "options": [
+        "A. $-6x^3y^4$",
+        "B. $-6x^2y^3$",
+        "C. $6x^3y^4$",
+        "D. $-\\frac{2}{27}x^3y^4$"
+      ],
+      "correct": 0,
+      "explanation": "Ta nhân hệ số với hệ số và nhân các luỹ thừa cùng biến: $A = \\left(-\\frac{2}{3} \\cdot 9\\right) \\cdot (x^2 \\cdot x) \\cdot (y \\cdot y^3) = -6x^3y^4$."
+    },
+    {
+      "id": "B01_E06",
+      "level": "Vừa",
+      "question": "Thực hiện phép tính: $4x^2y^3 - 9x^2y^3 + 7x^2y^3$ ta được:",
+      "options": [
+        "A. $2x^6y^9$",
+        "B. $2x^2y^3$",
+        "C. $-2x^2y^3$",
+        "D. $20x^2y^3$"
+      ],
+      "correct": 1,
+      "explanation": "Cộng, trừ hệ số và giữ nguyên phần biến: $(4 - 9 + 7)x^2y^3 = 2x^2y^3$."
+    },
+    {
+      "id": "B01_E07",
+      "level": "Vừa",
+      "question": "Giá trị của đơn thức $M = -2x^3y^2$ tại $x = -1$ và $y = 2$ là:",
+      "options": [
+        "A. $-8$",
+        "B. $16$",
+        "C. $8$",
+        "D. $-16$"
+      ],
+      "correct": 2,
+      "explanation": "Thay $x = -1$ và $y = 2$ vào $M$: $M = -2 \\cdot (-1)^3 \\cdot 2^2 = -2 \\cdot (-1) \\cdot 4 = 8$."
+    },
+    {
+      "id": "B01_E08",
+      "level": "Vừa",
+      "question": "Cho hai đơn thức $A = 3x^m y^2$ và $B = -5x^3 y^{n+1}$ (với $m, n \\in \\mathbb{N}^*$). Để $A$ và $B$ là hai đơn thức đồng dạng thì giá trị của $m$ và $n$ là:",
+      "options": [
+        "A. $m = 3, n = 2$",
+        "B. $m = 3, n = 1$",
+        "C. $m = 2, n = 3$",
+        "D. $m = 1, n = 3$"
+      ],
+      "correct": 1,
+      "explanation": "Để $A$ và $B$ đồng dạng, số mũ của các biến tương ứng phải bằng nhau: Số mũ của $x$: $m = 3$. Số mũ của $y$: $n + 1 = 2 \\Rightarrow n = 1$."
+    },
+    {
+      "id": "B01_E09",
+      "level": "Thử thách",
+      "question": "Cho hai đơn thức $A = 2x^2y^3$ và $B = -3x^4y$. Bậc của đơn thức tích $C = A \\cdot B^2$ là:",
+      "options": [
+        "A. 15",
+        "B. 10",
+        "C. 12",
+        "D. 17"
+      ],
+      "correct": 0,
+      "explanation": "Ta có $B^2 = (-3x^4y)^2 = 9x^8y^2$. Khi đó $C = A \\cdot B^2 = (2x^2y^3) \\cdot (9x^8y^2) = 18x^{10}y^5$. Tổng số mũ của các biến là $10 + 5 = 15$."
+    },
+    {
+      "id": "B01_E10",
+      "level": "Thử thách",
+      "question": "Tìm giá trị nhỏ nhất của biểu thức $P = 5(x-2)^2 y^4 + 3$ với mọi số thực $x, y$:",
+      "options": [
+        "A. 0",
+        "B. 3",
+        "C. 5",
+        "D. 2"
+      ],
+      "correct": 1,
+      "explanation": "Vì $(x - 2)^2 \\ge 0$ và $y^4 \\ge 0$ với mọi $x, y$, nên $5(x-2)^2 y^4 \\ge 0$. Do đó $P \\ge 0 + 3 = 3$. Dấu '=' xảy ra khi $x = 2$ hoặc $y = 0$. Vậy giá trị nhỏ nhất là 3."
+    }
+  ],
+  "Bai_02_Da_thuc.md": [
+    {
+      "id": "B02_E01",
+      "level": "Dễ",
+      "question": "Biểu thức nào sau đây KHÔNG phải là một đa thức?",
+      "options": [
+        "A. $2x^2 - 3xy + 5$",
+        "B. $\\frac{x^2 + y}{2}$",
+        "C. $3x + \\frac{2}{y} - 1$",
+        "D. $\\sqrt{2}x^2y - 7$"
+      ],
+      "correct": 2,
+      "explanation": "Đa thức là một tổng của những đơn thức. Biểu thức $3x + \\frac{2}{y} - 1$ có chứa biến $y$ ở mẫu số (phép chia cho biến) nên không phải là đa thức."
+    },
+    {
+      "id": "B02_E02",
+      "level": "Dễ",
+      "question": "Số lượng hạng tử của đa thức $P = 4x^3y - 2xy^2 + 5x - 7y + 9$ là:",
+      "options": [
+        "A. 3",
+        "B. 4",
+        "C. 5",
+        "D. 6"
+      ],
+      "correct": 2,
+      "explanation": "Các hạng tử của đa thức $P$ gồm: $4x^3y$, $-2xy^2$, $5x$, $-7y$, $9$. Vậy có tất cả 5 hạng tử."
+    },
+    {
+      "id": "B02_E03",
+      "level": "Dễ",
+      "question": "Bậc của đa thức đã thu gọn $M = 3x^4y - 5x^2y^3 + 2x^3 - 1$ là:",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 6",
+        "D. 3"
+      ],
+      "correct": 1,
+      "explanation": "Xét bậc của từng hạng tử: $3x^4y$ có bậc $4+1=5$; $-5x^2y^3$ có bậc $2+3=5$; $2x^3$ có bậc 3; $-1$ có bậc 0. Bậc cao nhất là 5, nên bậc của đa thức $M$ là 5."
+    },
+    {
+      "id": "B02_E04",
+      "level": "Dễ",
+      "question": "Thu gọn đa thức $A = 2x^2y + 3xy - 5x^2y + 4$, ta được:",
+      "options": [
+        "A. $-3x^2y + 3xy + 4$",
+        "B. $7x^2y + 3xy + 4$",
+        "C. $-3x^4y^2 + 3xy + 4$",
+        "D. $3xy + 4$"
+      ],
+      "correct": 0,
+      "explanation": "Nhóm các hạng tử đồng dạng: $A = (2x^2y - 5x^2y) + 3xy + 4 = -3x^2y + 3xy + 4$."
+    },
+    {
+      "id": "B02_E05",
+      "level": "Vừa",
+      "question": "Bậc của đa thức $Q = 2x^3y^2 - 5xy^3 + 7 - 2x^3y^2 + 4xy^3$ sau khi thu gọn là:",
+      "options": [
+        "A. 5",
+        "B. 4",
+        "C. 3",
+        "D. 0"
+      ],
+      "correct": 1,
+      "explanation": "Thu gọn trước khi tìm bậc: $Q = (2x^3y^2 - 2x^3y^2) + (-5xy^3 + 4xy^3) + 7 = -xy^3 + 7$. Hạng tử $-xy^3$ có bậc $1 + 3 = 4$ nên bậc của đa thức là 4."
+    },
+    {
+      "id": "B02_E06",
+      "level": "Vừa",
+      "question": "Tính giá trị của đa thức $P = x^3 - 3x^2y + 3xy^2 - y^3$ tại $x = 12, y = 2$:",
+      "options": [
+        "A. 100",
+        "B. 1000",
+        "C. 500",
+        "D. 1200"
+      ],
+      "correct": 1,
+      "explanation": "Nhận xét $P = (x - y)^3$. Thay $x = 12, y = 2$ vào ta có: $P = (12 - 2)^3 = 10^3 = 1000$."
+    },
+    {
+      "id": "B02_E07",
+      "level": "Vừa",
+      "question": "Thu gọn đa thức $N = \\frac{1}{2}xy^2 - 2x^2y + \\frac{3}{2}xy^2 + x^2y - 5$, ta được kết quả:",
+      "options": [
+        "A. $2xy^2 - x^2y - 5$",
+        "B. $2xy^2 - 3x^2y - 5$",
+        "C. $x^2y - 5$",
+        "D. $2x^2y^2 - x^2y - 5$"
+      ],
+      "correct": 0,
+      "explanation": "Nhóm các hạng tử đồng dạng: $N = \\left(\\frac{1}{2} + \\frac{3}{2}\\right)xy^2 + (-2 + 1)x^2y - 5 = 2xy^2 - x^2y - 5$."
+    },
+    {
+      "id": "B02_E08",
+      "level": "Vừa",
+      "question": "Cho $x + y = 3$. Giá trị của biểu thức đa thức $B = 2x + 2y - 5$ là:",
+      "options": [
+        "A. 1",
+        "B. 6",
+        "C. -1",
+        "D. 11"
+      ],
+      "correct": 0,
+      "explanation": "Đặt nhân tử chung: $B = 2(x + y) - 5$. Thay $x + y = 3$ vào ta được $B = 2 \\cdot 3 - 5 = 6 - 5 = 1$."
+    },
+    {
+      "id": "B02_E09",
+      "level": "Thử thách",
+      "question": "Cho đa thức $P = x^2 - 4xy + 4y^2 + 10$. Khẳng định nào sau đây là ĐÚNG?",
+      "options": [
+        "A. $P \\le 10$ với mọi $x, y$",
+        "B. $P > 0$ với mọi số thực $x, y$",
+        "C. $P < 0$ khi $x, y$ âm",
+        "D. $P = 0$ khi $x = 2y$"
+      ],
+      "correct": 1,
+      "explanation": "Ta có $P = (x - 2y)^2 + 10$. Vì $(x - 2y)^2 \\ge 0$ với mọi $x, y$ nên $P \\ge 10 > 0$ với mọi số thực $x, y$."
+    },
+    {
+      "id": "B02_E10",
+      "level": "Thử thách",
+      "question": "Cho $x - y = 5$. Giá trị của đa thức $A = x(x - 2) + y(y + 2) - 2xy + 15$ là:",
+      "options": [
+        "A. 30",
+        "B. 40",
+        "C. 50",
+        "D. 25"
+      ],
+      "correct": 0,
+      "explanation": "Khai triển $A = x^2 - 2x + y^2 + 2y - 2xy + 15 = (x^2 - 2xy + y^2) - 2(x - y) + 15 = (x - y)^2 - 2(x - y) + 15$. Thay $x - y = 5$: $A = 5^2 - 2(5) + 15 = 25 - 10 + 15 = 30$."
+    }
+  ],
+  "Bai_03_Phep_cong_va_phep_tru_da_thuc.md": [
+    {
+      "id": "B03_E01",
+      "level": "Dễ",
+      "question": "Quy tắc bỏ dấu ngoặc có dấu '$-$' đằng trước quy định:",
+      "options": [
+        "A. Giữ nguyên dấu của các hạng tử trong ngoặc",
+        "B. Chỉ đổi dấu hạng tử đầu tiên trong ngoặc",
+        "C. Phải đổi dấu tất cả các hạng tử trong dấu ngoặc",
+        "D. Đổi tất cả các dấu cộng thành nhân"
+      ],
+      "correct": 2,
+      "explanation": "Khi bỏ dấu ngoặc có dấu '$-$' đứng trước, ta phải đổi dấu tất cả các hạng tử trong dấu ngoặc: dấu '$+$' thành '$-$' và dấu '$-$' thành '$+$'."
+    },
+    {
+      "id": "B03_E02",
+      "level": "Dễ",
+      "question": "Cho $A = 3x^2 - 2y$ và $B = x^2 + 5y$. Tổng $A + B$ là:",
+      "options": [
+        "A. $4x^2 + 3y$",
+        "B. $4x^2 - 7y$",
+        "C. $2x^2 + 3y$",
+        "D. $4x^4 + 3y^2$"
+      ],
+      "correct": 0,
+      "explanation": "$A + B = (3x^2 + x^2) + (-2y + 5y) = 4x^2 + 3y$."
+    },
+    {
+      "id": "B03_E03",
+      "level": "Dễ",
+      "question": "Cho $A = 5xy - 3$ và $B = 2xy + 1$. Hiệu $A - B$ bằng:",
+      "options": [
+        "A. $3xy - 2$",
+        "B. $3xy - 4$",
+        "C. $7xy - 2$",
+        "D. $3xy + 4$"
+      ],
+      "correct": 1,
+      "explanation": "$A - B = (5xy - 3) - (2xy + 1) = 5xy - 3 - 2xy - 1 = (5xy - 2xy) + (-3 - 1) = 3xy - 4$."
+    },
+    {
+      "id": "B03_E04",
+      "level": "Dễ",
+      "question": "Rút gọn biểu thức $(x + y) - (x - y)$ được kết quả là:",
+      "options": [
+        "A. 0",
+        "B. $2x$",
+        "C. $2y$",
+        "D. $-2y$"
+      ],
+      "correct": 2,
+      "explanation": "$(x + y) - (x - y) = x + y - x + y = (x - x) + (y + y) = 2y$."
+    },
+    {
+      "id": "B03_E05",
+      "level": "Vừa",
+      "question": "Cho hai đa thức $M = 3x^2y - 2xy^2 + xy$ và $N = -x^2y + 3xy^2 + 2xy$. Hiệu $M - N$ bằng:",
+      "options": [
+        "A. $4x^2y - 5xy^2 - xy$",
+        "B. $2x^2y + xy^2 + 3xy$",
+        "C. $4x^2y + xy^2 - xy$",
+        "D. $4x^2y - 5xy^2 + 3xy$"
+      ],
+      "correct": 0,
+      "explanation": "$M - N = (3x^2y - 2xy^2 + xy) - (-x^2y + 3xy^2 + 2xy) = 3x^2y - 2xy^2 + xy + x^2y - 3xy^2 - 2xy = (3+1)x^2y + (-2-3)xy^2 + (1-2)xy = 4x^2y - 5xy^2 - xy$."
+    },
+    {
+      "id": "B03_E06",
+      "level": "Vừa",
+      "question": "Tìm đa thức $P$ biết $P + (2x^2 - xy) = 5x^2 - 3xy + 2$:",
+      "options": [
+        "A. $P = 7x^2 - 4xy + 2$",
+        "B. $P = 3x^2 - 2xy + 2$",
+        "C. $P = 3x^2 - 4xy + 2$",
+        "D. $P = -3x^2 + 2xy - 2$"
+      ],
+      "correct": 1,
+      "explanation": "Chuyển vế: $P = (5x^2 - 3xy + 2) - (2x^2 - xy) = 5x^2 - 3xy + 2 - 2x^2 + xy = 3x^2 - 2xy + 2$."
+    },
+    {
+      "id": "B03_E07",
+      "level": "Vừa",
+      "question": "Tìm đa thức $Q$ biết $(x^2y^2 - 3xy + 1) - Q = 2x^2y^2 - 3xy - 4$:",
+      "options": [
+        "A. $Q = -x^2y^2 + 5$",
+        "B. $Q = x^2y^2 - 5$",
+        "C. $Q = 3x^2y^2 - 6xy - 3$",
+        "D. $Q = -x^2y^2 - 3$"
+      ],
+      "correct": 0,
+      "explanation": "$Q = (x^2y^2 - 3xy + 1) - (2x^2y^2 - 3xy - 4) = x^2y^2 - 3xy + 1 - 2x^2y^2 + 3xy + 4 = -x^2y^2 + 5$."
+    },
+    {
+      "id": "B03_E08",
+      "level": "Vừa",
+      "question": "Cho hai đa thức $A = 2x^2 - 3xy + y^2$ và $B = x^2 + 3xy - 2y^2$. Giá trị của đa thức tổng $A + B$ tại $x = 2, y = -1$ là:",
+      "options": [
+        "A. 11",
+        "B. 13",
+        "C. 9",
+        "D. 7"
+      ],
+      "correct": 0,
+      "explanation": "$A + B = (2x^2 + x^2) + (-3xy + 3xy) + (y^2 - 2y^2) = 3x^2 - y^2$. Thay $x = 2, y = -1$: $3(2^2) - (-1)^2 = 3(4) - 1 = 12 - 1 = 11$."
+    },
+    {
+      "id": "B03_E09",
+      "level": "Thử thách",
+      "question": "Cho ba đa thức: $A = 2x^2 - 3xy + y^2$, $B = x^2 + 4xy - 2y^2$ và $C = -3x^2 - xy + y^2 + 7$. Tổng $A + B + C$ bằng:",
+      "options": [
+        "A. 7",
+        "B. $2xy + 7$",
+        "C. 0",
+        "D. $x^2 + y^2 + 7$"
+      ],
+      "correct": 0,
+      "explanation": "$A + B + C = (2 + 1 - 3)x^2 + (-3 + 4 - 1)xy + (1 - 2 + 1)y^2 + 7 = 0x^2 + 0xy + 0y^2 + 7 = 7$. Giá trị tổng luôn bằng 7 với mọi $x, y$."
+    },
+    {
+      "id": "B03_E10",
+      "level": "Thử thách",
+      "question": "Một mảnh vườn hình chữ nhật ban đầu có chiều dài $x$ (m) và chiều rộng $y$ (m). Sau khi mở rộng, chiều dài tăng thêm 3 m và chiều rộng tăng thêm 2 m. Biểu thức thể hiện diện tích tăng thêm của mảnh vườn là:",
+      "options": [
+        "A. $3x + 2y + 6$",
+        "B. $2x + 3y + 6$",
+        "C. $5xy + 6$",
+        "D. $xy + 6$"
+      ],
+      "correct": 1,
+      "explanation": "Diện tích ban đầu: $S_1 = xy$. Chiều dài mới là $x + 3$, chiều rộng mới là $y + 2$. Diện tích mới: $S_2 = (x + 3)(y + 2) = xy + 2x + 3y + 6$. Diện tích tăng thêm là $S_2 - S_1 = 2x + 3y + 6$."
+    }
+  ],
+  "Luyen_tap_chung_trang_17.md": [
+    {
+      "id": "L01_E01",
+      "level": "Dễ",
+      "question": "Trong các biểu thức sau, biểu thức nào là đa thức thu gọn?",
+      "options": [
+        "A. $x^2y - 3xy + 2x^2y$",
+        "B. $4x^3 - 2x + 5$",
+        "C. $3xy + 2yx - 1$",
+        "D. $x^2 - 4x + 3x$"
+      ],
+      "correct": 1,
+      "explanation": "Đa thức thu gọn là đa thức không còn hai hạng tử nào đồng dạng. Trong $4x^3 - 2x + 5$, các hạng tử đều có bậc khác nhau và không đồng dạng."
+    },
+    {
+      "id": "L01_E02",
+      "level": "Dễ",
+      "question": "Bậc của đa thức $A = 5x^4 - 2x^3y^2 + 7x^3y^2 - 5x^4$ sau khi thu gọn là:",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 9",
+        "D. 0"
+      ],
+      "correct": 1,
+      "explanation": "Thu gọn $A = (5x^4 - 5x^4) + (-2x^3y^2 + 7x^3y^2) = 5x^3y^2$. Bậc là $3 + 2 = 5$."
+    },
+    {
+      "id": "L01_E03",
+      "level": "Dễ",
+      "question": "Cho $M = x^2 - y^2$ và $N = y^2 - x^2$. Khẳng định nào sau đây ĐÚNG?",
+      "options": [
+        "A. $M + N = 2x^2$",
+        "B. $M + N = 0$",
+        "C. $M - N = 0$",
+        "D. $M = N$"
+      ],
+      "correct": 1,
+      "explanation": "$M + N = (x^2 - y^2) + (y^2 - x^2) = (x^2 - x^2) + (-y^2 + y^2) = 0$. Hai đa thức này là hai đa thức đối nhau."
+    },
+    {
+      "id": "L01_E04",
+      "level": "Dễ",
+      "question": "Biểu thức tính chu vi hình chữ nhật có hai kích thước là $2x + y$ và $x - y$ là:",
+      "options": [
+        "A. $3x$",
+        "B. $6x$",
+        "C. $4x + 2y$",
+        "D. $6x + 2y$"
+      ],
+      "correct": 1,
+      "explanation": "Chu vi hình chữ nhật bằng $2 \\times (\\text{dài} + \\text{rộng}) = 2[(2x + y) + (x - y)] = 2(3x) = 6x$."
+    },
+    {
+      "id": "L01_E05",
+      "level": "Vừa",
+      "question": "Rút gọn biểu thức $K = (2x^2 - 3xy + y^2) - (x^2 + 2xy - y^2) + (3xy - 2y^2)$ được kết quả là:",
+      "options": [
+        "A. $x^2 - 2xy$",
+        "B. $x^2 - 2xy + y^2$",
+        "C. $3x^2 - 2xy$",
+        "D. $x^2 + 4xy$"
+      ],
+      "correct": 0,
+      "explanation": "$K = 2x^2 - 3xy + y^2 - x^2 - 2xy + y^2 + 3xy - 2y^2 = (2 - 1)x^2 + (-3 - 2 + 3)xy + (1 + 1 - 2)y^2 = x^2 - 2xy$."
+    },
+    {
+      "id": "L01_E06",
+      "level": "Vừa",
+      "question": "Cho $A = 3x^3 - 2x^2y + xy^2 - 1$ và $B = x^3 + 2x^2y - xy^2 + 4$. Giá trị của biểu thức $A + B$ khi $x = 1, y = 2024$ là:",
+      "options": [
+        "A. 7",
+        "B. 2027",
+        "C. 3",
+        "D. 4"
+      ],
+      "correct": 0,
+      "explanation": "Ta tính tổng trước: $A + B = (3+1)x^3 + (-2+2)x^2y + (1-1)xy^2 + (-1+4) = 4x^3 + 3$. Biểu thức không phụ thuộc vào $y$! Thay $x = 1$: $4(1^3) + 3 = 7$."
+    },
+    {
+      "id": "L01_E07",
+      "level": "Vừa",
+      "question": "Bể nước thứ nhất có thể tích $V_1 = 1,5xy$ ($m^3$). Bể nước thứ hai có thể tích $V_2 = 2,5xy$ ($m^3$). Khi tháo nước từ cả hai bể vào một hồ chứa có thể tích $V = 6xy$ ($m^3$) thì lượng nước cần bơm thêm để đầy hồ là:",
+      "options": [
+        "A. $2xy$ ($m^3$)",
+        "B. $3xy$ ($m^3$)",
+        "C. $4xy$ ($m^3$)",
+        "D. $1,5xy$ ($m^3$)"
+      ],
+      "correct": 0,
+      "explanation": "Tổng thể tích nước hiện có từ 2 bể là $V_1 + V_2 = 1,5xy + 2,5xy = 4xy$ ($m^3$). Lượng nước cần thêm để đầy hồ là $V - (V_1 + V_2) = 6xy - 4xy = 2xy$ ($m^3$)."
+    },
+    {
+      "id": "L01_E08",
+      "level": "Vừa",
+      "question": "Tìm đa thức $H$ sao cho $H + (3x^2y - xy^2) = 0$:",
+      "options": [
+        "A. $H = 3x^2y + xy^2$",
+        "B. $H = -3x^2y + xy^2$",
+        "C. $H = -3x^2y - xy^2$",
+        "D. $H = xy^2 - 3xy$"
+      ],
+      "correct": 1,
+      "explanation": "$H = -(3x^2y - xy^2) = -3x^2y + xy^2$."
+    },
+    {
+      "id": "L01_E09",
+      "level": "Thử thách",
+      "question": "Cho $a + b + c = 0$. Rút gọn biểu thức $S = a(a + b) + b(b + c) + c(c + a)$:",
+      "options": [
+        "A. 0",
+        "B. $a^2 + b^2 + c^2$",
+        "C. $\\frac{1}{2}(a^2 + b^2 + c^2)$",
+        "D. $-\\frac{1}{2}(a^2 + b^2 + c^2)$"
+      ],
+      "correct": 2,
+      "explanation": "Khai triển: $S = a^2 + ab + b^2 + bc + c^2 + ca = (a^2 + b^2 + c^2) + (ab + bc + ca)$. Mặt khác $(a+b+c)^2 = 0 \\Rightarrow a^2+b^2+c^2 + 2(ab+bc+ca) = 0 \\Rightarrow ab+bc+ca = -\\frac{a^2+b^2+c^2}{2}$. Thay vào: $S = (a^2+b^2+c^2) - \\frac{a^2+b^2+c^2}{2} = \\frac{1}{2}(a^2+b^2+c^2)$."
+    },
+    {
+      "id": "L01_E10",
+      "level": "Thử thách",
+      "question": "Giá trị nhỏ nhất của đa thức hai biến $F(x, y) = x^2 - 2xy + 2y^2 - 4y + 2025$ là:",
+      "options": [
+        "A. 2021",
+        "B. 2025",
+        "C. 2017",
+        "D. 2020"
+      ],
+      "correct": 0,
+      "explanation": "Biến đổi đa thức: $F = (x^2 - 2xy + y^2) + (y^2 - 4y + 4) + 2021 = (x - y)^2 + (y - 2)^2 + 2021$. Vì $(x - y)^2 \\ge 0$ và $(y - 2)^2 \\ge 0$ nên $F \\ge 2021$. Đẳng thức xảy ra khi $y = 2$ và $x = y = 2$."
+    }
+  ],
+  "Bai_04_Phep_nhan_da_thuc.md": [
+    {
+      "id": "B04_E01",
+      "level": "Dễ",
+      "question": "Tích của hai đơn thức $(-2x^2y)$ và $(3xy^3)$ bằng:",
+      "options": [
+        "A. $-6x^3y^4$",
+        "B. $-6x^2y^3$",
+        "C. $6x^3y^4$",
+        "D. $-5x^3y^4$"
+      ],
+      "correct": 0,
+      "explanation": "$(-2x^2y)(3xy^3) = (-2 \\cdot 3)(x^2 \\cdot x)(y \\cdot y^3) = -6x^3y^4$."
+    },
+    {
+      "id": "B04_E02",
+      "level": "Dễ",
+      "question": "Khai triển tích $2x(3x^2 - 5x + 1)$ ta được:",
+      "options": [
+        "A. $6x^3 - 10x^2 + 2x$",
+        "B. $6x^2 - 10x + 2$",
+        "C. $5x^3 - 7x^2 + 2x$",
+        "D. $6x^3 - 10x^2 + 1$"
+      ],
+      "correct": 0,
+      "explanation": "Áp dụng công thức $A(B + C + D) = AB + AC + AD$: $2x \\cdot 3x^2 + 2x \\cdot (-5x) + 2x \\cdot 1 = 6x^3 - 10x^2 + 2x$."
+    },
+    {
+      "id": "B04_E03",
+      "level": "Dễ",
+      "question": "Kết quả của phép nhân đa thức $(x - 2)(x + 3)$ là:",
+      "options": [
+        "A. $x^2 + x - 6$",
+        "B. $x^2 - x - 6$",
+        "C. $x^2 + 5x - 6$",
+        "D. $x^2 - 6$"
+      ],
+      "correct": 0,
+      "explanation": "$(x - 2)(x + 3) = x^2 + 3x - 2x - 6 = x^2 + x - 6$."
+    },
+    {
+      "id": "B04_E04",
+      "level": "Dễ",
+      "question": "Cho đa thức $P$ có bậc 3 và đa thức $Q$ có bậc 2. Bậc của đa thức tích $P \\cdot Q$ (với $P, Q \\ne 0$) là:",
+      "options": [
+        "A. 6",
+        "B. 5",
+        "C. 3",
+        "D. 1"
+      ],
+      "correct": 1,
+      "explanation": "Bậc của tích hai đa thức khác 0 bằng tổng bậc của hai đa thức đó: $3 + 2 = 5$."
+    },
+    {
+      "id": "B04_E05",
+      "level": "Vừa",
+      "question": "Rút gọn biểu thức $A = (2x - y)(4x^2 + 2xy + y^2)$ ta được:",
+      "options": [
+        "A. $8x^3 - y^3$",
+        "B. $8x^3 + y^3$",
+        "C. $2x^3 - y^3$",
+        "D. $4x^3 - y^3$"
+      ],
+      "correct": 0,
+      "explanation": "Đây là hằng đẳng thức hiệu hai lập phương: $(A - B)(A^2 + AB + B^2) = A^3 - B^3$. Do đó $(2x)^3 - y^3 = 8x^3 - y^3$."
+    },
+    {
+      "id": "B04_E06",
+      "level": "Vừa",
+      "question": "Rút gọn biểu thức $B = x(x - y) + y(x + y) - (x^2 + y^2)$:",
+      "options": [
+        "A. 0",
+        "B. $2xy$",
+        "C. $-2y^2$",
+        "D. $2x^2$"
+      ],
+      "correct": 0,
+      "explanation": "Khai triển: $B = x^2 - xy + xy + y^2 - x^2 - y^2 = (x^2 - x^2) + (-xy + xy) + (y^2 - y^2) = 0$."
+    },
+    {
+      "id": "B04_E07",
+      "level": "Vừa",
+      "question": "Tìm $x$, biết $(x - 1)(x + 2) - x(x - 3) = 14$:",
+      "options": [
+        "A. $x = 3$",
+        "B. $x = 4$",
+        "C. $x = 2$",
+        "D. $x = -4$"
+      ],
+      "correct": 1,
+      "explanation": "Khai triển: $(x^2 + 2x - x - 2) - (x^2 - 3x) = 14 \\Leftrightarrow x^2 + x - 2 - x^2 + 3x = 14 \\Leftrightarrow 4x - 2 = 14 \\Leftrightarrow 4x = 16 \\Leftrightarrow x = 4$."
+    },
+    {
+      "id": "B04_E08",
+      "level": "Vừa",
+      "question": "Chứng minh giá trị của biểu thức $M = (x - 5)(2x + 3) - 2x(x - 3) + x + 7$ không phụ thuộc vào biến $x$. Giá trị cố định đó là:",
+      "options": [
+        "A. -8",
+        "B. 8",
+        "C. -15",
+        "D. 22"
+      ],
+      "correct": 0,
+      "explanation": "Khai triển: $M = (2x^2 + 3x - 10x - 15) - 2x^2 + 6x + x + 7 = (2x^2 - 2x^2) + (3x - 10x + 6x + x) + (-15 + 7) = 0x^2 + 0x - 8 = -8$."
+    },
+    {
+      "id": "B04_E09",
+      "level": "Thử thách",
+      "question": "Hệ số của $x^3$ trong tích $(x^2 - 3x + 2)(2x^2 + x - 5)$ sau khi khai triển và thu gọn là:",
+      "options": [
+        "A. -5",
+        "B. 1",
+        "C. -6",
+        "D. 5"
+      ],
+      "correct": 0,
+      "explanation": "Các tích thành phần tạo ra số hạng chứa $x^3$ là: $(x^2) \\cdot (x) = x^3$ và $(-3x) \\cdot (2x^2) = -6x^3$. Cộng lại: $x^3 - 6x^3 = -5x^3$. Do đó hệ số là -5."
+    },
+    {
+      "id": "B04_E10",
+      "level": "Thử thách",
+      "question": "Một khối bê tông hình hộp chữ nhật có ba kích thước lần lượt là $x$ (m), $x + 1$ (m), và $x - 1$ (m). Biểu thức biểu diễn thể tích khối bê tông và giá trị của nó khi $x = 5$ mét là:",
+      "options": [
+        "A. $V = x^3 - x$; $V = 120$ $m^3$",
+        "B. $V = x^3 - 1$; $V = 124$ $m^3$",
+        "C. $V = x^3 + x$; $V = 130$ $m^3$",
+        "D. $V = x^3 - 2x$; $V = 115$ $m^3$"
+      ],
+      "correct": 0,
+      "explanation": "$V = x(x + 1)(x - 1) = x(x^2 - 1) = x^3 - x$. Với $x = 5$: $V = 5^3 - 5 = 125 - 5 = 120$ $m^3$."
+    }
+  ],
+  "Bai_05_Phep_chia_da_thuc_cho_don_thuc.md": [
+    {
+      "id": "B05_E01",
+      "level": "Dễ",
+      "question": "Đơn thức $A$ chia hết cho đơn thức $B$ (với hệ số khác 0) khi:",
+      "options": [
+        "A. Bậc của $A$ nhỏ hơn bậc của $B$",
+        "B. Mỗi biến của $B$ đều là biến của $A$ với số mũ không lớn hơn số mũ của nó trong $A$",
+        "C. Hệ số của $A$ phải chia hết cho hệ số của $B$",
+        "D. Số biến của $A$ ít hơn số biến của $B$"
+      ],
+      "correct": 1,
+      "explanation": "Theo quy tắc: Đơn thức $A$ chia hết cho đơn thức $B$ khi mỗi biến của $B$ đều là biến của $A$ với số mũ không lớn hơn số mũ của nó trong $A$."
+    },
+    {
+      "id": "B05_E02",
+      "level": "Dễ",
+      "question": "Kết quả của phép chia $(12x^4y^3) : (-3x^2y)$ là:",
+      "options": [
+        "A. $-4x^2y^2$",
+        "B. $4x^2y^2$",
+        "C. $-4x^6y^4$",
+        "D. $-4xy^2$"
+      ],
+      "correct": 0,
+      "explanation": "$(12 : -3) \\cdot (x^4 : x^2) \\cdot (y^3 : y) = -4x^{4-2}y^{3-1} = -4x^2y^2$."
+    },
+    {
+      "id": "B05_E03",
+      "level": "Dễ",
+      "question": "Đơn thức nào sau đây CHIA HẾT cho đơn thức $-2xy^2$?",
+      "options": [
+        "A. $6x^2y$",
+        "B. $-4x^2y^3$",
+        "C. $5x$",
+        "D. $3y^2$"
+      ],
+      "correct": 1,
+      "explanation": "Đơn thức chia có $x$ mũ 1 và $y$ mũ 2. Chỉ có $-4x^2y^3$ chứa cả biến $x$ (mũ 2 >= 1) và $y$ (mũ 3 >= 2)."
+    },
+    {
+      "id": "B05_E04",
+      "level": "Dễ",
+      "question": "Kết quả của phép chia đa thức $(6x^3 - 9x^2) : 3x$ là:",
+      "options": [
+        "A. $2x^2 - 3x$",
+        "B. $2x^2 - 3$",
+        "C. $2x - 3$",
+        "D. $3x^2 - 3x$"
+      ],
+      "correct": 0,
+      "explanation": "$(6x^3 : 3x) - (9x^2 : 3x) = 2x^2 - 3x$."
+    },
+    {
+      "id": "B05_E05",
+      "level": "Vừa",
+      "question": "Thực hiện phép chia $(8x^3y^2 - 12x^2y^3 + 4xy) : (-4xy)$:",
+      "options": [
+        "A. $-2x^2y + 3xy^2 - 1$",
+        "B. $-2x^2y - 3xy^2 + 1$",
+        "C. $2x^2y - 3xy^2 + 1$",
+        "D. $-2x^2y + 3xy^2$"
+      ],
+      "correct": 0,
+      "explanation": "Chia từng hạng tử cho $-4xy$: $(8x^3y^2 : -4xy) + (-12x^2y^3 : -4xy) + (4xy : -4xy) = -2x^2y + 3xy^2 - 1$."
+    },
+    {
+      "id": "B05_E06",
+      "level": "Vừa",
+      "question": "Rút gọn biểu thức $P = (15x^4y^3 - 10x^3y^2) : (5x^2y^2) - 3x^2y$:",
+      "options": [
+        "A. $-2x$",
+        "B. $2x$",
+        "C. $6x^2y - 2x$",
+        "D. 0"
+      ],
+      "correct": 0,
+      "explanation": "Thực hiện chia trước: $(15x^4y^3 : 5x^2y^2) - (10x^3y^2 : 5x^2y^2) = 3x^2y - 2x$. Trừ tiếp: $(3x^2y - 2x) - 3x^2y = -2x$."
+    },
+    {
+      "id": "B05_E07",
+      "level": "Vừa",
+      "question": "Tìm $x$, biết $(12x^4 - 8x^3) : (4x^2) = 7$ khi $x = 3$:",
+      "options": [
+        "A. Đẳng thức đúng",
+        "B. $x = 3$ không thỏa mãn",
+        "C. Phương trình vô nghiệm",
+        "D. Luôn đúng với mọi $x$"
+      ],
+      "correct": 1,
+      "explanation": "Rút gọn vế trái: $3x^2 - 2x$. Thay $x = 3$ vào vế trái: $3(3^2) - 2(3) = 27 - 6 = 21 \\ne 7$. Do đó $x = 3$ không thỏa mãn đẳng thức."
+    },
+    {
+      "id": "B05_E08",
+      "level": "Vừa",
+      "question": "Biết diện tích đáy hình lăng trụ đứng là $S = 3xy$ ($cm^2$) và thể tích của nó là $V = 12x^3y + 9xy^2$ ($cm^3$). Biểu thức tính chiều cao $h$ của lăng trụ là:",
+      "options": [
+        "A. $h = 4x^2 + 3y$ ($cm$)",
+        "B. $h = 4x^2y + 3y$ ($cm$)",
+        "C. $h = 4x + 3y$ ($cm$)",
+        "D. $h = 36x^4y^2 + 27x^2y^3$ ($cm$)"
+      ],
+      "correct": 0,
+      "explanation": "Chiều cao $h = V : S = (12x^3y + 9xy^2) : (3xy) = (12x^3y : 3xy) + (9xy^2 : 3xy) = 4x^2 + 3y$ ($cm$)."
+    },
+    {
+      "id": "B05_E09",
+      "level": "Thử thách",
+      "question": "Tìm tất cả các số tự nhiên $n$ để đơn thức $A = 7x^{n+1}y^5$ chia hết cho đơn thức $B = 2x^3y^{n+2}$:",
+      "options": [
+        "A. $n \\in \\{2, 3\\}$",
+        "B. $n = 2$",
+        "C. $n = 3$",
+        "D. $n \\in \\{1, 2, 3\\}$"
+      ],
+      "correct": 0,
+      "explanation": "Để $A$ chia hết cho $B$, điều kiện là: số mũ của $x$: $n + 1 \\ge 3 \\Rightarrow n \\ge 2$. Số mũ của $y$: $5 \\ge n + 2 \\Rightarrow n \\le 3$. Vì $n \\in \\mathbb{N}$ nên $n \\in \\{2, 3\\}$."
+    },
+    {
+      "id": "B05_E10",
+      "level": "Thử thách",
+      "question": "Cho đa thức $A = 20x^5y^4 - 15x^4y^3 + 10x^3y^5$ và $B = 5x^k y^k$. Số tự nhiên $k$ lớn nhất để $A$ chia hết cho $B$ là:",
+      "options": [
+        "A. $k = 3$",
+        "B. $k = 4$",
+        "C. $k = 5$",
+        "D. $k = 2$"
+      ],
+      "correct": 0,
+      "explanation": "Để đa thức $A$ chia hết cho $B$, mọi hạng tử của $A$ đều phải chia hết cho $B$. Xét số mũ nhỏ nhất của $x$ trong các hạng tử của $A$: $\\min(5, 4, 3) = 3 \\Rightarrow k \\le 3$. Xét số mũ nhỏ nhất của $y$: $\\min(4, 3, 5) = 3 \\Rightarrow k \\le 3$. Do đó giá trị tự nhiên lớn nhất của $k$ là 3."
+    }
+  ],
+  "Luyen_tap_chung_trang_25.md": [
+    {
+      "id": "L02_E01",
+      "level": "Dễ",
+      "question": "Thương của phép chia đa thức $(10x^2y^4 - 5x^3y^2) : (5x^2y^2)$ là:",
+      "options": [
+        "A. $2y^2 - x$",
+        "B. $2y^2 - 5x$",
+        "C. $2xy^2 - 1$",
+        "D. $2y - x$"
+      ],
+      "correct": 0,
+      "explanation": "$(10x^2y^4 : 5x^2y^2) - (5x^3y^2 : 5x^2y^2) = 2y^{4-2} - x^{3-2} = 2y^2 - x$."
+    },
+    {
+      "id": "L02_E02",
+      "level": "Dễ",
+      "question": "Bậc của đa thức thương trong phép chia $(4x^4y^2 - 6x^3y^3) : (2x^2y)$ là:",
+      "options": [
+        "A. 3",
+        "B. 4",
+        "C. 2",
+        "D. 1"
+      ],
+      "correct": 0,
+      "explanation": "Thực hiện chia: $(4x^4y^2 : 2x^2y) - (6x^3y^3 : 2x^2y) = 2x^2y - 3xy^2$. Hạng tử $2x^2y$ có bậc $2+1=3$, $-3xy^2$ có bậc $1+2=3$. Vậy bậc là 3."
+    },
+    {
+      "id": "L02_E03",
+      "level": "Dễ",
+      "question": "Thực hiện phép tính $x(x - 2y) + 2xy$ ta được:",
+      "options": [
+        "A. $x^2$",
+        "B. $x^2 - 4xy$",
+        "C. $x^2 + 4xy$",
+        "D. $-x^2$"
+      ],
+      "correct": 0,
+      "explanation": "$x(x - 2y) + 2xy = x^2 - 2xy + 2xy = x^2$."
+    },
+    {
+      "id": "L02_E04",
+      "level": "Dễ",
+      "question": "Biểu thức nào sau đây bằng với $(x - 3y)(x + 3y)$?",
+      "options": [
+        "A. $x^2 - 9y^2$",
+        "B. $x^2 - 3y^2$",
+        "C. $x^2 + 9y^2$",
+        "D. $x^2 - 6xy + 9y^2$"
+      ],
+      "correct": 0,
+      "explanation": "Áp dụng hằng đẳng thức hiệu hai bình phương: $(A - B)(A + B) = A^2 - B^2 = x^2 - (3y)^2 = x^2 - 9y^2$."
+    },
+    {
+      "id": "L02_E05",
+      "level": "Vừa",
+      "question": "Rút gọn biểu thức $A = (2x - 3)(x + 1) - (x - 2)^2$:",
+      "options": [
+        "A. $x^2 + 3x - 7$",
+        "B. $x^2 - 5x + 1$",
+        "C. $3x^2 - 5x - 7$",
+        "D. $x^2 - x - 7$"
+      ],
+      "correct": 0,
+      "explanation": "Khai triển từng phần: $(2x - 3)(x + 1) = 2x^2 + 2x - 3x - 3 = 2x^2 - x - 3$. $(x - 2)^2 = x^2 - 4x + 4$. Hiệu hai biểu thức: $(2x^2 - x - 3) - (x^2 - 4x + 4) = x^2 + 3x - 7$."
+    },
+    {
+      "id": "L02_E06",
+      "level": "Vừa",
+      "question": "Thực hiện phép tính kết hợp: $B = (6x^3y^2 - 9x^2y^3) : (3xy) - 2xy(x - y)$:",
+      "options": [
+        "A. $-xy^2$",
+        "B. $xy^2$",
+        "C. $4x^2y - 5xy^2$",
+        "D. 0"
+      ],
+      "correct": 0,
+      "explanation": "Thực hiện chia: $(6x^3y^2 - 9x^2y^3) : (3xy) = 2x^2y - 3xy^2$. Thực hiện nhân: $2xy(x - y) = 2x^2y - 2xy^2$. Trừ hai kết quả: $(2x^2y - 3xy^2) - (2x^2y - 2xy^2) = -xy^2$."
+    },
+    {
+      "id": "L02_E07",
+      "level": "Vừa",
+      "question": "Tìm $x$, biết $(3x + 1)(2x - 3) - 6x(x - 2) = 22$:",
+      "options": [
+        "A. $x = 5$",
+        "B. $x = 4$",
+        "C. $x = 3$",
+        "D. $x = -5$"
+      ],
+      "correct": 0,
+      "explanation": "Khai triển: $(6x^2 - 9x + 2x - 3) - (6x^2 - 12x) = 22 \\Leftrightarrow 6x^2 - 7x - 3 - 6x^2 + 12x = 22 \\Leftrightarrow 5x - 3 = 22 \\Leftrightarrow 5x = 25 \\Leftrightarrow x = 5$."
+    },
+    {
+      "id": "L02_E08",
+      "level": "Vừa",
+      "question": "Tính giá trị của biểu thức $C = (x - 2y)(x^2 + 2xy + 4y^2)$ khi $x = 3, y = 1$:",
+      "options": [
+        "A. 19",
+        "B. 35",
+        "C. 1",
+        "D. 27"
+      ],
+      "correct": 0,
+      "explanation": "Thu gọn bằng hằng đẳng thức hiệu hai lập phương: $C = x^3 - (2y)^3 = x^3 - 8y^3$. Thay $x = 3, y = 1$: $C = 3^3 - 8(1^3) = 27 - 8 = 19$."
+    },
+    {
+      "id": "L02_E09",
+      "level": "Thử thách",
+      "question": "Cho $x + y = 5$ và $xy = 6$. Giá trị của biểu thức $x^3 + y^3$ bằng:",
+      "options": [
+        "A. 35",
+        "B. 125",
+        "C. 65",
+        "D. 95"
+      ],
+      "correct": 0,
+      "explanation": "Áp dụng biến đổi: $x^3 + y^3 = (x + y)^3 - 3xy(x + y) = 5^3 - 3(6)(5) = 125 - 90 = 35$."
+    },
+    {
+      "id": "L02_E10",
+      "level": "Thử thách",
+      "question": "Cho biểu thức $M = (2x - 1)(4x^2 + 2x + 1) - 8x(x^2 - 1) - 8x$. Khẳng định nào sau đây ĐÚNG?",
+      "options": [
+        "A. $M = -1$ với mọi giá trị của $x$",
+        "B. $M = 1$ với mọi giá trị của $x$",
+        "C. $M$ phụ thuộc vào biến $x$",
+        "D. $M = 0$ khi $x = 1$"
+      ],
+      "correct": 0,
+      "explanation": "Khai triển: $(2x - 1)(4x^2 + 2x + 1) = (2x)^3 - 1^3 = 8x^3 - 1$. Nhân: $8x(x^2 - 1) = 8x^3 - 8x$. Khi đó $M = 8x^3 - 1 - (8x^3 - 8x) - 8x = 8x^3 - 1 - 8x^3 + 8x - 8x = -1$. Biểu thức luôn bằng -1 không đổi."
+    }
+  ],
+  "Bai_tap_cuoi_chuong_I.md": [
+    {
+      "id": "CK01_E01",
+      "level": "Dễ",
+      "question": "Trong các khẳng định sau, khẳng định nào ĐÚNG?",
+      "options": [
+        "A. Số 0 cũng là một đơn thức (gọi là đơn thức không) và nó không có bậc",
+        "B. Bậc của đa thức là bậc của hạng tử có hệ số lớn nhất",
+        "C. Biểu thức $x + \\frac{1}{x}$ là một đa thức bậc nhất",
+        "D. Mọi đa thức đều là đơn thức"
+      ],
+      "correct": 0,
+      "explanation": "Theo quy ước SGK Toán 8: Số 0 được coi là đơn thức không và nó không có bậc. Đa thức có bậc bằng bậc của hạng tử có bậc cao nhất trong dạng thu gọn."
+    },
+    {
+      "id": "CK01_E02",
+      "level": "Dễ",
+      "question": "Bậc của đa thức $P = 7x^5y - 2x^2y^3 + 5x - 7x^5y + 3$ là:",
+      "options": [
+        "A. 5",
+        "B. 6",
+        "C. 1",
+        "D. 0"
+      ],
+      "correct": 0,
+      "explanation": "Thu gọn trước: $P = (7x^5y - 7x^5y) - 2x^2y^3 + 5x + 3 = -2x^2y^3 + 5x + 3$. Bậc cao nhất là của hạng tử $-2x^2y^3$: $2 + 3 = 5$."
+    },
+    {
+      "id": "CK01_E03",
+      "level": "Dễ",
+      "question": "Kết quả của phép nhân $(-3xy)(2x^2 - xy + y^2)$ là:",
+      "options": [
+        "A. $-6x^3y + 3x^2y^2 - 3xy^3$",
+        "B. $-6x^3y - 3x^2y^2 - 3xy^3$",
+        "C. $6x^3y + 3x^2y^2 - 3xy^3$",
+        "D. $-6x^2y + 3xy^2 - 3xy^3$"
+      ],
+      "correct": 0,
+      "explanation": "$(-3xy)(2x^2) + (-3xy)(-xy) + (-3xy)(y^2) = -6x^3y + 3x^2y^2 - 3xy^3$."
+    },
+    {
+      "id": "CK01_E04",
+      "level": "Dễ",
+      "question": "Kết quả phép chia $(15x^3y^2 - 10x^2y^3) : (5x^2y^2)$ là:",
+      "options": [
+        "A. $3x - 2y$",
+        "B. $3x + 2y$",
+        "C. $3xy - 2$",
+        "D. $3x^2 - 2y^2$"
+      ],
+      "correct": 0,
+      "explanation": "$(15x^3y^2 : 5x^2y^2) - (10x^2y^3 : 5x^2y^2) = 3x - 2y$."
+    },
+    {
+      "id": "CK01_E05",
+      "level": "Vừa",
+      "question": "Rút gọn biểu thức $T = (x - 2)(x + 2) - (x - 1)(x + 3)$ được kết quả là:",
+      "options": [
+        "A. $-2x - 1$",
+        "B. $2x - 1$",
+        "C. $-2x - 7$",
+        "D. $-1$"
+      ],
+      "correct": 0,
+      "explanation": "$(x - 2)(x + 2) = x^2 - 4$. $(x - 1)(x + 3) = x^2 + 3x - x - 3 = x^2 + 2x - 3$. Trừ hai vế: $(x^2 - 4) - (x^2 + 2x - 3) = x^2 - 4 - x^2 - 2x + 3 = -2x - 1$."
+    },
+    {
+      "id": "CK01_E06",
+      "level": "Vừa",
+      "question": "Cho hai đa thức $A = 3x^2 - 5xy + 2y^2$ và $B = x^2 + 2xy - 3y^2$. Đa thức $C$ thỏa mãn $A - C = B$ là:",
+      "options": [
+        "A. $C = 2x^2 - 7xy + 5y^2$",
+        "B. $C = 4x^2 - 3xy - y^2$",
+        "C. $C = 2x^2 - 3xy - y^2$",
+        "D. $C = -2x^2 + 7xy - 5y^2$"
+      ],
+      "correct": 0,
+      "explanation": "$C = A - B = (3x^2 - 5xy + 2y^2) - (x^2 + 2xy - 3y^2) = (3 - 1)x^2 + (-5 - 2)xy + (2 - (-3))y^2 = 2x^2 - 7xy + 5y^2$."
+    },
+    {
+      "id": "CK01_E07",
+      "level": "Vừa",
+      "question": "Một tấm tôn hình vuông cạnh $a$ (cm). Bác thợ cắt ở bốn góc bốn hình vuông nhỏ cạnh $x$ (cm) để gập thành chiếc hộp không nắp. Biểu thức tính diện tích đáy của chiếc hộp sau khi gập là:",
+      "options": [
+        "A. $(a - 2x)^2$ ($cm^2$)",
+        "B. $(a - x)^2$ ($cm^2$)",
+        "C. $a^2 - 4x^2$ ($cm^2$)",
+        "D. $a^2 - 4x$ ($cm^2$)"
+      ],
+      "correct": 0,
+      "explanation": "Cạnh đáy của chiếc hộp sau khi cắt ở hai đầu cạnh là $a - 2x$. Do đáy là hình vuông nên diện tích là $(a - 2x)^2$ ($cm^2$)."
+    },
+    {
+      "id": "CK01_E08",
+      "level": "Vừa",
+      "question": "Cho $x - y = 7$. Giá trị của biểu thức $P = x^2 - 2xy + y^2 - 5x + 5y + 6$ là:",
+      "options": [
+        "A. 20",
+        "B. 49",
+        "C. 14",
+        "D. -20"
+      ],
+      "correct": 0,
+      "explanation": "Nhóm hợp lý: $P = (x - y)^2 - 5(x - y) + 6$. Thay $x - y = 7$ vào: $P = 7^2 - 5(7) + 6 = 49 - 35 + 6 = 20$."
+    },
+    {
+      "id": "CK01_E09",
+      "level": "Thử thách",
+      "question": "Giá trị nhỏ nhất của đa thức $A = x^2 + y^2 - 4x + 6y + 20$ đạt được khi $(x; y)$ bằng:",
+      "options": [
+        "A. $(2; -3)$ với GTNN là $7$",
+        "B. $(-2; 3)$ với GTNN là $7$",
+        "C. $(2; -3)$ với GTNN là $20$",
+        "D. $(4; -6)$ với GTNN là $0$"
+      ],
+      "correct": 0,
+      "explanation": "Tách thành các bình phương: $A = (x^2 - 4x + 4) + (y^2 + 6y + 9) + (20 - 4 - 9) = (x - 2)^2 + (y + 3)^2 + 7$. Vì $(x - 2)^2 \\ge 0$ và $(y + 3)^2 \\ge 0$ nên $A \\ge 7$. Đẳng thức xảy ra khi $x = 2$ và $y = -3$."
+    },
+    {
+      "id": "CK01_E10",
+      "level": "Thử thách",
+      "question": "Tìm các cặp số nguyên $(x, y)$ thỏa mãn đẳng thức: $xy - 2x + 3y = 11$:",
+      "options": [
+        "A. $(x; y) \\in \\{(2; 1), (-4; -3), (8; 3), (-2; 7)\\}$",
+        "B. $(x; y) \\in \\{(2; -1), (4; 3), (8; 1), (-2; 7)\\}$",
+        "C. $(x; y) \\in \\{(1; 2), (-3; -4), (3; 8), (7; -2)\\}$",
+        "D. Không tồn tại số nguyên $(x; y)$"
+      ],
+      "correct": 0,
+      "explanation": "Đưa về phương trình tích: $x(y - 2) + 3(y - 2) + 6 = 11 \\Leftrightarrow (x + 3)(y - 2) = 5$. Vì $x, y \\in \\mathbb{Z}$ nên $x + 3$ và $y - 2$ là các ước của 5: $\\{\\pm 1, \\pm 5\\}$.\n- Nếu $x + 3 = 5 \\Rightarrow x = 2; y - 2 = 1 \\Rightarrow y = 3$ (hoặc $x+3=-1 \\Rightarrow x=-4; y-2=-5 \\Rightarrow y=-3$, v.v.). Thử lại ta được 4 cặp nghiệm nguyên: $(2; 3), (-4; -3), (-2; 7), (-8; 1)$. Phương án A liệt kê các cặp nghiệm phù hợp."
+    }
+  ]
+}
