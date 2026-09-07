@@ -1,24 +1,26 @@
 <!-- SECTION: QUICK_NOTES -->
-<div class="callout-note">
-<strong>💡 Bản Đồ Tư Duy Cốt Lõi Chương I — Đa Thức:</strong><br>
-Chương I gồm 5 mắt xích trọng tâm: <strong>Đơn thức thu gọn</strong> ➔ <strong>Đa thức thu gọn</strong> ➔ <strong>Cộng & Trừ</strong> ➔ <strong>Nhân đa thức</strong> ➔ <strong>Chia đa thức cho đơn thức</strong>.
-</div>
+### 💡 Bản Đồ Tư Duy Cốt Lõi Chương I — Đa Thức
+
+> 📖 **5 Mắt Xích Trọng Tâm:**
+> **Đơn thức thu gọn** ➔ **Đa thức thu gọn** ➔ **Cộng & Trừ** ➔ **Nhân đa thức** ➔ **Chia đa thức cho đơn thức**.
+
+---
 
 #### 📐 Bảng Tổng Hợp 4 Quy Tắc Then Chốt:
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-1. <strong>Bậc:</strong> Là tổng số mũ lớn nhất của các biến trong đa thức thu gọn.<br>
-2. <strong>Cộng / Trừ:</strong> Đổi dấu toàn bộ khi phá ngoặc có dấu trừ: $-(A - B) = -A + B$.<br>
-3. <strong>Nhân:</strong> Phân phối & cộng số mũ: $x^m \cdot x^n = x^{m+n}$.<br>
-4. <strong>Chia:</strong> Chia từng hạng tử & trừ số mũ: $x^m : x^n = x^{m-n}$ ($m \ge n$).
-</div>
 
-<div class="callout-tip">
-<strong>⚠️ 4 Sai Lầm Kinh Điển Cần Tuyệt Đối Tránh Trong Bài Thi:</strong><br>
-1. Chưa thu gọn đa thức mà đã vội kết luận bậc.<br>
-2. Quên đổi dấu các hạng tử phía sau khi phá ngoặc có dấu trừ.<br>
-3. Nhầm lẫn giữa cộng số mũ và nhân số mũ.<br>
-4. Bỏ sót số $1$ khi chia hai đơn thức giống nhau ($A : A = 1$).
-</div>
+> 1. **Bậc:** Là tổng số mũ lớn nhất của các biến trong đa thức thu gọn.
+> 2. **Cộng / Trừ:** Đổi dấu toàn bộ khi phá ngoặc có dấu trừ: $-(A - B) = -A + B$.
+> 3. **Nhân:** Phân phối & cộng số mũ: $x^m \cdot x^n = x^{m+n}$.
+> 4. **Chia:** Chia từng hạng tử & trừ số mũ: $x^m : x^n = x^{m-n}$ ($m \ge n$).
+
+---
+
+#### ⚠️ 4 Sai Lầm Kinh Điển Cần Tránh Trong Bài Thi:
+
+> 1. Chưa thu gọn đa thức mà đã vội kết luận bậc.
+> 2. Quên đổi dấu các hạng tử phía sau khi phá ngoặc có dấu trừ.
+> 3. Nhầm lẫn giữa cộng số mũ và nhân số mũ.
+> 4. Bỏ sót số $1$ khi chia hai đơn thức giống nhau ($A : A = 1$).
 
 <!-- SECTION: STEP_EXAMPLES -->
 ### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
@@ -27,20 +29,20 @@ Chương I gồm 5 mắt xích trọng tâm: <strong>Đơn thức thu gọn</str
 Một bể bơi hình hộp chữ nhật có chiều dài $x\text{ (m)}$, chiều rộng $y\text{ (m)}$ và chiều sâu $1,5\text{ (m)}$. Người ta tăng chiều dài thêm $2\text{ m}$ và tăng chiều rộng thêm $1\text{ m}$.
 Hãy viết đa thức biểu thị thể tích nước tăng thêm khi bơm đầy bể bơi mới so với bể ban đầu.
 
-<div class="example-card">
-<strong>🔍 Phương pháp tư duy:</strong> Thể tích hình hộp chữ nhật = Dài $\times$ Rộng $\times$ Sâu. Thể tích tăng thêm = Thể tích mới $-$ Thể tích ban đầu.<br><br>
-<strong>📝 Lời giải chi tiết:</strong><br>
-• <strong>Bước 1 (Tính thể tích bể bơi ban đầu):</strong>
+**🔍 Phương pháp tư duy:**
+Thể tích hình hộp chữ nhật = Dài $\times$ Rộng $\times$ Sâu. Thể tích tăng thêm = Thể tích mới $-$ Thể tích ban đầu.
+
+**📝 Lời giải chi tiết:**
+- **Bước 1 (Tính thể tích bể bơi ban đầu):**
   $$V_1 = x \cdot y \cdot 1,5 = 1,5xy \quad (\text{m}^3)$$
-• <strong>Bước 2 (Tính thể tích bể bơi sau khi mở rộng):</strong>
-  - Chiều dài mới: $x + 2\text{ (m)}$<br>
-  - Chiều rộng mới: $y + 1\text{ (m)}$<br>
+- **Bước 2 (Tính thể tích bể bơi sau khi mở rộng):**
+  - Chiều dài mới: $x + 2\text{ (m)}$
+  - Chiều rộng mới: $y + 1\text{ (m)}$
   $$V_2 = (x + 2)(y + 1) \cdot 1,5 = 1,5(xy + x + 2y + 2) = 1,5xy + 1,5x + 3y + 3 \quad (\text{m}^3)$$
-• <strong>Bước 3 (Tính lượng nước tăng thêm $\Delta V$):</strong>
+- **Bước 3 (Tính lượng nước tăng thêm $\Delta V$):**
   $$\Delta V = V_2 - V_1 = (1,5xy + 1,5x + 3y + 3) - 1,5xy = 1,5x + 3y + 3 \quad (\text{m}^3)$$
-• <strong>Kết luận:</strong> Lượng nước tăng thêm được biểu thị bằng đa thức:
-  $$\Delta V = <strong>1,5x + 3y + 3</strong> \quad (\text{m}^3)$$
-</div>
+- **Kết luận:** Lượng nước tăng thêm được biểu thị bằng đa thức:
+  $$\Delta V = 1,5x + 3y + 3 \quad (\text{m}^3)$$
 
 <!-- SECTION: SGK_CONTENT -->
 # BÀI TẬP CUỐI CHƯƠNG I

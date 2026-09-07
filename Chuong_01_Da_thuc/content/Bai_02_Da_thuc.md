@@ -1,23 +1,36 @@
 <!-- SECTION: QUICK_NOTES -->
-<div class="callout-note">
-<strong>💡 Định Nghĩa Cô Đọng:</strong><br>
-• <strong>Đa thức</strong> là một tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một <strong>hạng tử</strong> của đa thức đó.<br>
-• <strong>Đa thức thu gọn</strong> là đa thức không còn hai hạng tử nào đồng dạng.
-</div>
+### 💡 Ghi Nhớ Cốt Lõi
+
+> 📖 **Định Nghĩa:**
+> - **Đa thức** là một tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một **hạng tử** của đa thức đó.
+> - **Đa thức thu gọn** là đa thức không còn hai hạng tử nào đồng dạng.
+
+---
 
 #### 📐 Công Thức Trọng Tâm:
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-• <strong>Bậc của đa thức:</strong> Là bậc của hạng tử có <strong>bậc cao nhất</strong> trong dạng thu gọn của đa thức đó.<br>
-• <strong>Quy trình thu gọn đa thức:</strong>
-  $$A = \text{Nhóm các hạng tử đồng dạng} \implies \text{Cộng trừ hệ số từng nhóm}$$
-• <strong>Tính giá trị đa thức:</strong> Thay giá trị cụ thể của các biến vào đa thức đã thu gọn.
-</div>
 
-<div class="callout-tip">
-<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
-❌ <strong>Lỗi 1:</strong> Tìm bậc khi đa thức chưa thu gọn <em>(Dẫn tới chọn nhầm hạng tử có bậc cao nhưng thực chất bị triệt tiêu về $0$).</em><br>
-❌ <strong>Lỗi 2:</strong> Bỏ quên dấu âm của hệ số khi đổi chỗ hạng tử. <em>Ví dụ: Trong $x^2 - 3xy + y^2$, hạng tử thứ hai là $-3xy$, khi nhóm phải mang theo cả dấu trừ!</em>
-</div>
+> **Bậc của đa thức:**
+>
+> Là bậc của hạng tử có **bậc cao nhất** trong dạng thu gọn của đa thức đó.
+>
+> ---
+>
+> **Quy trình thu gọn đa thức:**
+>
+> $$A = \text{Nhóm các hạng tử đồng dạng} \implies \text{Cộng trừ hệ số từng nhóm}$$
+>
+> ---
+>
+> **Tính giá trị đa thức:**
+>
+> Thay giá trị cụ thể của các biến vào đa thức đã thu gọn rồi tính toán giá trị số.
+
+---
+
+#### ⚠️ Sai Lầm Thường Gặp Cần Tránh:
+
+> - ❌ **Lỗi 1:** Tìm bậc khi đa thức chưa thu gọn *(Dẫn tới chọn nhầm hạng tử có bậc cao nhưng thực chất bị triệt tiêu về $0$)*.
+> - ❌ **Lỗi 2:** Bỏ quên dấu âm của hệ số khi đổi chỗ hạng tử *(Ví dụ: Trong $x^2 - 3xy + y^2$, hạng tử thứ hai là $-3xy$, khi nhóm phải mang theo cả dấu trừ)*.
 
 <!-- SECTION: STEP_EXAMPLES -->
 ### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
@@ -26,31 +39,33 @@
 Thu gọn đa thức sau và tìm bậc của nó:
 $$A = 5x^2y - 3xy + \frac{1}{2}x^2y - x + 3xy - 1$$
 
-<div class="example-card">
-<strong>🔍 Phương pháp tư duy:</strong> Tìm các cặp hạng tử có phần biến giống nhau rồi nhóm chúng vào từng ngoặc nối bởi dấu cộng.<br><br>
-<strong>📝 Lời giải chi tiết:</strong><br>
-• <strong>Bước 1 (Nhóm các hạng tử đồng dạng):</strong>
+**🔍 Phương pháp tư duy:**
+Tìm các cặp hạng tử có phần biến giống nhau rồi nhóm chúng vào từng ngoặc nối bởi dấu cộng.
+
+**📝 Lời giải chi tiết:**
+- **Bước 1 (Nhóm các hạng tử đồng dạng):**
   $$A = \left(5x^2y + \frac{1}{2}x^2y\right) + (-3xy + 3xy) - x - 1$$
-• <strong>Bước 2 (Thu gọn từng nhóm):</strong>
+- **Bước 2 (Thu gọn từng nhóm):**
   $$A = \left(5 + \frac{1}{2}\right)x^2y + 0 - x - 1 = \frac{11}{2}x^2y - x - 1$$
-• <strong>Bước 3 (Xác định bậc từng hạng tử):</strong>
-  - Hạng tử $\frac{11}{2}x^2y$ có bậc $2 + 1 = 3$.<br>
-  - Hạng tử $-x$ có bậc $1$; hạng tử $-1$ có bậc $0$.<br>
-• <strong>Kết luận:</strong> Đa thức $A$ đã thu gọn là <strong>$\frac{11}{2}x^2y - x - 1$</strong> và có bậc là <strong>$3$</strong>.
-</div>
+- **Bước 3 (Xác định bậc từng hạng tử):**
+  - Hạng tử $\frac{11}{2}x^2y$ có bậc $2 + 1 = 3$.
+  - Hạng tử $-x$ có bậc $1$; hạng tử $-1$ có bậc $0$.
+- **Kết luận:** Đa thức $A$ đã thu gọn là **$\frac{11}{2}x^2y - x - 1$** và có bậc là **$3$**.
+
+---
 
 #### 📌 Ví dụ 2: Tính giá trị của đa thức
 Tính giá trị của đa thức $B = 2x^2 - xy + 1$ tại $x = 1$ và $y = -2$.
 
-<div class="example-card">
-<strong>🔍 Phương pháp tư duy:</strong> Thay số âm luôn đặt trong ngoặc đơn $(-2)$ để tránh sai dấu khi nâng luỹ thừa hoặc nhân.<br><br>
-<strong>📝 Lời giải chi tiết:</strong><br>
-• <strong>Bước 1 (Thay biến vào biểu thức):</strong>
+**🔍 Phương pháp tư duy:**
+Thay số âm luôn đặt trong ngoặc đơn $(-2)$ để tránh sai dấu khi nâng luỹ thừa hoặc nhân.
+
+**📝 Lời giải chi tiết:**
+- **Bước 1 (Thay biến vào biểu thức):**
   $$B = 2 \cdot (1)^2 - (1) \cdot (-2) + 1$$
-• <strong>Bước 2 (Thực hiện phép tính theo thứ tự ưu tiên):</strong>
+- **Bước 2 (Thực hiện phép tính theo thứ tự ưu tiên):**
   $$B = 2 \cdot 1 - (-2) + 1 = 2 + 2 + 1 = 5$$
-• <strong>Kết luận:</strong> Giá trị của đa thức $B$ tại $x = 1, y = -2$ là <strong>$5$</strong>.
-</div>
+- **Kết luận:** Giá trị của đa thức $B$ tại $x = 1, y = -2$ là **$5$**.
 
 <!-- SECTION: SGK_CONTENT -->
 # BÀI 2. ĐA THỨC

@@ -57,6 +57,16 @@ st.markdown("""
         box-shadow: 0 2px 4px rgba(0,0,0,0.04);
     }
     
+    /* Khung trích dẫn Blockquote chuẩn mực hỗ trợ 100% KaTeX */
+    blockquote {
+        background: #f8fafc;
+        border-left: 5px solid #2563eb !important;
+        border-radius: 8px;
+        padding: 0.8rem 1.2rem !important;
+        margin: 1rem 0 !important;
+        color: #1e293b;
+    }
+    
     /* Khung ghi nhớ Callout */
     .callout-note {
         background-color: #f0fdf4;
@@ -217,14 +227,9 @@ def process_markdown_formatting(content: str) -> str:
     # Thay thế thẻ ảnh markdown ![alt](path)
     content = re.sub(r'!\[(.*?)\]\((.*?)\)', replace_image_with_base64, content)
     
-    # Định dạng các blockquote đặc biệt: > [!NOTE] và > [!TIP]
-    content = re.sub(r'> \[!NOTE\]\s*\n((?:> .*\n?)*)', r'<div class="callout-note"><strong>📌 Kiến thức trọng tâm:</strong>\n\1</div>\n', content)
-    content = re.sub(r'> \[!TIP\]\s*\n((?:> .*\n?)*)', r'<div class="callout-tip"><strong>💡 Lưu ý quan trọng:</strong>\n\1</div>\n', content)
-    
-    # Gỡ bỏ các ký tự `>` thừa bên trong thẻ div vừa tạo
-    content = re.sub(r'<div class="(?:callout-note|callout-tip)">([\s\S]*?)</div>', 
-                     lambda m: '<div class="' + ('callout-note' if 'callout-note' in m.group(0) else 'callout-tip') + '">' + m.group(1).replace('> ', '').replace('>', '') + '</div>', 
-                     content)
+    # Định dạng các blockquote đặc biệt: > [!NOTE] và > [!TIP] sang markdown blockquote chuẩn
+    content = re.sub(r'> \[!NOTE\]\s*\n', '> 📌 **Kiến thức trọng tâm:**\n>\n', content)
+    content = re.sub(r'> \[!TIP\]\s*\n', '> 💡 **Lưu ý quan trọng:**\n>\n', content)
 
     return content
 

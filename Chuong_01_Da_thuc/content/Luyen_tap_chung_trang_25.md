@@ -1,22 +1,29 @@
 <!-- SECTION: QUICK_NOTES -->
-<div class="callout-note">
-<strong>💡 Ghi Nhớ Cốt Lõi:</strong><br>
-Phối hợp thành thạo các quy tắc nhân đơn thức, nhân đa thức và chia đa thức cho đơn thức; ứng dụng vào bài toán chứng minh biểu thức không phụ thuộc vào giá trị của biến.
-</div>
+### 💡 Ghi Nhớ Cốt Lõi
+
+> 📖 **Tổng Hợp Kiến Thức:**
+> Phối hợp thành thạo các quy tắc nhân đơn thức, nhân đa thức và chia đa thức cho đơn thức; ứng dụng vào bài toán chứng minh biểu thức không phụ thuộc vào giá trị của biến.
+
+---
 
 #### 📐 Công Thức Trọng Tâm:
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-• <strong>Dấu hiệu biểu thức không phụ thuộc vào biến:</strong>
-  $$\text{Biểu thức } P(x) \xrightarrow{\text{Rút gọn}} P(x) = C \quad (C \text{ là một hằng số, không còn chứa } x)$$
-• <strong>Thứ tự ưu tiên thực hiện phép tính:</strong>
-  $$\text{Trong ngoặc} \implies \text{Nhân & Chia} \implies \text{Cộng & Trừ}$$
-</div>
 
-<div class="callout-tip">
-<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
-❌ <strong>Lỗi 1:</strong> Bỏ sót dấu ngoặc trước biểu thức có dấu trừ dẫn đến sai dấu khi khai triển.<br>
-❌ <strong>Lỗi 2:</strong> Không kiểm tra lại bậc của đa thức kết quả xem các hạng tử chứa biến đã triệt tiêu hết chưa.
-</div>
+> **Dấu hiệu biểu thức không phụ thuộc vào biến:**
+>
+> $$\text{Biểu thức } P(x) \xrightarrow{\text{Rút gọn}} P(x) = C \quad (C \text{ là một hằng số, không còn chứa } x)$$
+>
+> ---
+>
+> **Thứ tự ưu tiên thực hiện phép tính:**
+>
+> $$\text{Trong ngoặc} \implies \text{Nhân & Chia} \implies \text{Cộng & Trừ}$$
+
+---
+
+#### ⚠️ Sai Lầm Thường Gặp Cần Tránh:
+
+> - ❌ **Lỗi 1:** Bỏ sót dấu ngoặc trước biểu thức có dấu trừ dẫn đến sai dấu khi khai triển.
+> - ❌ **Lỗi 2:** Không kiểm tra lại bậc của đa thức kết quả xem các hạng tử chứa biến đã triệt tiêu hết chưa.
 
 <!-- SECTION: STEP_EXAMPLES -->
 ### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
@@ -25,21 +32,21 @@ Phối hợp thành thạo các quy tắc nhân đơn thức, nhân đa thức v
 Chứng minh giá trị của biểu thức sau không phụ thuộc vào giá trị của biến $x$:
 $$P = (2x - 1)(x + 3) - 2x(x + 1) - 3x$$
 
-<div class="example-card">
-<strong>🔍 Phương pháp tư duy:</strong> Khai triển tất cả các tích ra, sau đó nhóm các hạng tử đồng dạng để triệt tiêu các số hạng chứa biến $x^2$ và $x$.<br><br>
-<strong>📝 Lời giải chi tiết:</strong><br>
-• <strong>Bước 1 (Khai triển tích thứ nhất $(2x - 1)(x + 3)$):</strong>
+**🔍 Phương pháp tư duy:**
+Khai triển tất cả các tích ra, sau đó nhóm các hạng tử đồng dạng để triệt tiêu các số hạng chứa biến $x^2$ và $x$.
+
+**📝 Lời giải chi tiết:**
+- **Bước 1 (Khai triển tích thứ nhất $(2x - 1)(x + 3)$):**
   $$(2x - 1)(x + 3) = 2x^2 + 6x - x - 3 = 2x^2 + 5x - 3$$
-• <strong>Bước 2 (Khai triển tích thứ hai $-2x(x + 1)$):</strong>
+- **Bước 2 (Khai triển tích thứ hai $-2x(x + 1)$):**
   $$-2x(x + 1) = -2x^2 - 2x$$
-• <strong>Bước 3 (Thu gọn toàn bộ biểu thức $P$):</strong>
+- **Bước 3 (Thu gọn toàn bộ biểu thức $P$):**
   $$\begin{aligned}
   P &= (2x^2 + 5x - 3) + (-2x^2 - 2x) - 3x \\
     &= (2x^2 - 2x^2) + (5x - 2x - 3x) - 3 \\
     &= 0x^2 + 0x - 3 = -3
   \end{aligned}$$
-• <strong>Kết luận:</strong> Vì $P = <strong>-3</strong>$ là một hằng số (không còn chứa biến $x$), nên giá trị của biểu thức $P$ không phụ thuộc vào giá trị của biến $x$.
-</div>
+- **Kết luận:** Vì $P = -3$ là hằng số (không còn chứa biến $x$), nên giá trị của biểu thức $P$ không phụ thuộc vào giá trị của biến $x$.
 
 <!-- SECTION: SGK_CONTENT -->
 # LUYỆN TẬP CHUNG (Trang 25)

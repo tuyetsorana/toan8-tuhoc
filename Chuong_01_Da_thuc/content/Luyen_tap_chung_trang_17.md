@@ -1,24 +1,31 @@
 <!-- SECTION: QUICK_NOTES -->
-<div class="callout-note">
-<strong>💡 Ghi Nhớ Cốt Lõi:</strong><br>
-Tổng hợp toàn bộ kỹ năng trọng tâm: Phân biệt đơn thức/đa thức, thu gọn, tìm bậc, cộng trừ đa thức và tính giá trị số học.
-</div>
+### 💡 Ghi Nhớ Cốt Lõi
+
+> 📖 **Tổng Hợp Kiến Thức:**
+> Phân biệt đơn thức và đa thức, kỹ năng thu gọn, xác định bậc, cộng trừ đa thức và tính giá trị số học.
+
+---
 
 #### 📐 Công Thức Trọng Tâm:
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-• <strong>Kỹ thuật chuyển vế tìm đa thức chưa biết:</strong>
-  - $A - C = B \implies C = A - B$
-  - $A + D = B \implies D = B - A$
-  - $E - A = B \implies E = A + B$
-• <strong>Quy tắc luỹ thừa số âm:</strong>
-  $$(-a)^n = a^n \quad \text{(nếu } n \text{ chẵn)}; \quad (-a)^n = -a^n \quad \text{(nếu } n \text{ lẻ)}$$
-</div>
 
-<div class="callout-tip">
-<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
-❌ <strong>Lỗi 1:</strong> Tính sai luỹ thừa số âm: Nhầm $(-2)^2 = 4$ với $-2^2 = -4$.<br>
-❌ <strong>Lỗi 2:</strong> Chuyển vế không đổi dấu dẫn đến sai dấu toàn bộ đa thức cần tìm.
-</div>
+> **Kỹ thuật chuyển vế tìm đa thức chưa biết:**
+>
+> - $A - C = B \implies C = A - B$
+> - $A + D = B \implies D = B - A$
+> - $E - A = B \implies E = A + B$
+>
+> ---
+>
+> **Quy tắc luỹ thừa của số âm:**
+>
+> $$(-a)^n = a^n \quad (n \text{ chẵn}); \qquad (-a)^n = -a^n \quad (n \text{ lẻ})$$
+
+---
+
+#### ⚠️ Sai Lầm Thường Gặp Cần Tránh:
+
+> - ❌ **Lỗi 1:** Tính sai luỹ thừa số âm: Nhầm $(-2)^2 = 4$ với $-2^2 = -4$.
+> - ❌ **Lỗi 2:** Chuyển vế không đổi dấu dẫn đến sai dấu toàn bộ đa thức cần tìm.
 
 <!-- SECTION: STEP_EXAMPLES -->
 ### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
@@ -28,21 +35,21 @@ Cho hai đa thức $A = 2x^2y - 3xy + 1$ và $B = x^2y + xy - 4$.
 a) Tìm đa thức $C$ sao cho $A - C = B$.
 b) Tính giá trị của $C$ tại $x = 1$ và $y = 2$.
 
-<div class="example-card">
-<strong>🔍 Phương pháp tư duy:</strong> Coi $A - C = B$ như bài toán tìm số trừ: $C = A - B$. Sau đó rút gọn $C$ trước khi thay số.<br><br>
-<strong>📝 Lời giải chi tiết:</strong><br>
-• <strong>Bước 1 (Biến đổi tìm biểu thức $C$):</strong>
+**🔍 Phương pháp tư duy:**
+Coi $A - C = B$ như bài toán tìm số trừ: $C = A - B$. Sau đó rút gọn $C$ trước khi thay số.
+
+**📝 Lời giải chi tiết:**
+- **Bước 1 (Biến đổi tìm biểu thức $C$):**
   $$C = A - B = (2x^2y - 3xy + 1) - (x^2y + xy - 4)$$
-• <strong>Bước 2 (Bỏ dấu ngoặc và thu gọn):</strong>
+- **Bước 2 (Bỏ dấu ngoặc và thu gọn):**
   $$\begin{aligned}
   C &= 2x^2y - 3xy + 1 - x^2y - xy + 4 \\
     &= (2x^2y - x^2y) + (-3xy - xy) + (1 + 4) \\
     &= x^2y - 4xy + 5
   \end{aligned}$$
-• <strong>Bước 3 (Thay giá trị $x = 1, y = 2$ vào $C$):</strong>
+- **Bước 3 (Thay giá trị $x = 1, y = 2$ vào $C$):**
   $$C = (1)^2 \cdot 2 - 4 \cdot (1) \cdot (2) + 5 = 2 - 8 + 5 = -1$$
-• <strong>Kết luận:</strong> Đa thức $C = <strong>x^2y - 4xy + 5</strong>$, giá trị tại $x = 1, y = 2$ là <strong>$-1$</strong>.
-</div>
+- **Kết luận:** Đa thức $C = x^2y - 4xy + 5$, giá trị tại $x = 1, y = 2$ là $-1$.
 
 <!-- SECTION: SGK_CONTENT -->
 # LUYỆN TẬP CHUNG (Trang 17)

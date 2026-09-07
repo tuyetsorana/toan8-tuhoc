@@ -1,24 +1,31 @@
 <!-- SECTION: QUICK_NOTES -->
-<div class="callout-note">
-<strong>💡 Định Nghĩa Cô Đọng:</strong><br>
-• <strong>Đơn thức $A$ chia hết cho đơn thức $B$:</strong> Khi mỗi biến của $B$ đều là biến của $A$ với số mũ không lớn hơn số mũ của nó trong $A$.<br>
-• <strong>Chia đa thức cho đơn thức:</strong> Chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả lại.
-</div>
+### 💡 Ghi Nhớ Cốt Lõi
+
+> 📖 **Định Nghĩa:**
+> - **Đơn thức $A$ chia hết cho đơn thức $B$:** Khi mỗi biến của $B$ đều là biến của $A$ với số mũ không lớn hơn số mũ của nó trong $A$.
+> - **Chia đa thức cho đơn thức:** Chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả lại.
+
+---
 
 #### 📐 Công Thức Trọng Tâm:
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-• <strong>Chia luỹ thừa cùng cơ số:</strong>
-  $$x^m : x^n = x^{m-n} \quad (m \ge n); \quad x^m : x^m = 1$$
-• <strong>Chia đa thức cho đơn thức:</strong>
-  $$(A + B - C) : D = (A : D) + (B : D) - (C : D)$$
-</div>
 
-<div class="callout-tip">
-<strong>⚠️ Sai Lầm Thường Gặp Cần Tránh:</strong><br>
-❌ <strong>Lỗi 1:</strong> Lấy số mũ chia số mũ: $x^6 : x^2 = x^3$ (SAI) ➔ Đúng phải là $x^{6-2} = x^4$.<br>
-❌ <strong>Lỗi 2:</strong> Bỏ quên số $1$ khi chia hai biểu thức giống hệt nhau: $(2x^2 + x) : x = 2x$ (SAI) ➔ Đúng phải là $2x + 1$ vì $x : x = 1$.<br>
-❌ <strong>Lỗi 3:</strong> Một đa thức KHÔNG chia hết cho đơn thức nếu có dù chỉ 1 hạng tử không chia hết.
-</div>
+> **Chia luỹ thừa cùng cơ số:**
+>
+> $$x^m : x^n = x^{m-n} \quad (m \ge n); \qquad x^m : x^m = 1$$
+>
+> ---
+>
+> **Chia đa thức cho đơn thức:**
+>
+> $$(A + B - C) : D = (A : D) + (B : D) - (C : D)$$
+
+---
+
+#### ⚠️ Sai Lầm Thường Gặp Cần Tránh:
+
+> - ❌ **Lỗi 1:** Lấy số mũ chia số mũ: $x^6 : x^2 = x^3$ (SAI) ➔ Đúng phải là $x^{6-2} = x^4$.
+> - ❌ **Lỗi 2:** Bỏ quên số $1$ khi chia hai biểu thức giống hệt nhau: $(2x^2 + x) : x = 2x$ (SAI) ➔ Đúng là $2x + 1$ vì $x : x = 1$.
+> - ❌ **Lỗi 3:** Một đa thức KHÔNG chia hết cho đơn thức nếu có dù chỉ 1 hạng tử không chia hết.
 
 <!-- SECTION: STEP_EXAMPLES -->
 ### 📝 Ví Dụ Mẫu Biến Đổi Từng Bước
@@ -27,19 +34,19 @@
 Thực hiện phép tính:
 $$M = (6x^3y^2 - 9x^2y^3 + 3xy) : 3xy$$
 
-<div class="example-card">
-<strong>🔍 Phương pháp tư duy:</strong> Lấy từng hạng tử của đa thức bị chia chia cho đơn thức $3xy$. Chú ý hạng tử cuối cùng $3xy : 3xy = 1$.<br><br>
-<strong>📝 Lời giải chi tiết:</strong><br>
-• <strong>Bước 1 (Tách thành tổng các phép chia đơn thức):</strong>
+**🔍 Phương pháp tư duy:**
+Lấy từng hạng tử của đa thức bị chia chia cho đơn thức $3xy$. Chú ý hạng tử cuối cùng $3xy : 3xy = 1$.
+
+**📝 Lời giải chi tiết:**
+- **Bước 1 (Tách thành tổng các phép chia đơn thức):**
   $$M = (6x^3y^2 : 3xy) + (-9x^2y^3 : 3xy) + (3xy : 3xy)$$
-• <strong>Bước 2 (Thực hiện từng phép chia):</strong>
-  - $6x^3y^2 : 3xy = (6:3) \cdot x^{3-1} \cdot y^{2-1} = 2x^2y$<br>
-  - $-9x^2y^3 : 3xy = (-9:3) \cdot x^{2-1} \cdot y^{3-1} = -3xy^2$<br>
-  - $3xy : 3xy = 1$<br>
-• <strong>Bước 3 (Cộng các kết quả lại):</strong>
+- **Bước 2 (Thực hiện từng phép chia):**
+  - $6x^3y^2 : 3xy = (6:3) \cdot x^{3-1} \cdot y^{2-1} = 2x^2y$
+  - $-9x^2y^3 : 3xy = (-9:3) \cdot x^{2-1} \cdot y^{3-1} = -3xy^2$
+  - $3xy : 3xy = 1$
+- **Bước 3 (Cộng các kết quả lại):**
   $$M = 2x^2y - 3xy^2 + 1$$
-• <strong>Kết luận:</strong> Thương của phép chia là <strong>$2x^2y - 3xy^2 + 1$</strong>.
-</div>
+- **Kết luận:** Thương của phép chia là $2x^2y - 3xy^2 + 1$.
 
 <!-- SECTION: SGK_CONTENT -->
 # BÀI 5. PHÉP CHIA ĐA THỨC CHO ĐƠN THỨC
