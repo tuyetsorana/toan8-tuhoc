@@ -58,33 +58,43 @@ st.markdown("""
     }
     
     /* Khung trích dẫn Blockquote / Thẻ Ghi Nhớ chuẩn mực hỗ trợ 100% KaTeX */
-    blockquote {
-        background: #f8fafc !important;
-        border: 1px solid #e2e8f0 !important;
-        border-left: 5px solid #2563eb !important;
+    blockquote,
+    [data-testid="stMarkdownContainer"] blockquote {
+        background: #ffffff !important; /* Nền trắng tinh tối ưu độ tương phản */
+        border: 1.5px solid #cbd5e1 !important;
+        border-left: 6px solid #2563eb !important;
         border-radius: 8px !important;
-        padding: 1rem 1.4rem !important;
+        padding: 1.1rem 1.5rem !important;
         margin: 1.2rem 0 !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
+        opacity: 1 !important; /* XÓA BỎ HOÀN TOÀN OPACITY 0.6 CỦA STREAMLIT GÂY MỜ CHỮ */
     }
     
-    /* Chữ thường trong thẻ ghi nhớ: Màu đen sắc nét, loại bỏ hoàn toàn màu xám mờ */
+    /* Chữ thường trong thẻ ghi nhớ: Màu đen đậm sắc nét, loại bỏ hoàn toàn màu xám mờ */
     blockquote, 
     blockquote p, 
     blockquote li, 
     blockquote span, 
     blockquote ul, 
-    blockquote ol,
-    blockquote div {
+    blockquote ol, 
+    blockquote div,
+    [data-testid="stMarkdownContainer"] blockquote p,
+    [data-testid="stMarkdownContainer"] blockquote li {
         color: #000000 !important; /* Đen tuyền 100% */
+        opacity: 1 !important;     /* 100% sắc nét, không mờ */
         font-size: 1.05rem !important;
-        line-height: 1.7 !important;
+        font-weight: 500 !important; /* Chữ đậm vừa phải, rõ nét không bị mảnh */
+        line-height: 1.75 !important;
     }
     
     /* Chú thích in nghiêng: Màu đen sẫm rõ ràng */
-    blockquote em, blockquote em span {
+    blockquote em, 
+    blockquote em span,
+    [data-testid="stMarkdownContainer"] blockquote em {
         color: #1e293b !important;
+        opacity: 1 !important;
         font-style: italic !important;
+        font-weight: 500 !important;
     }
 
     /* NHỮNG TỪ CẦN NHỚ (Chữ in đậm): Màu đỏ nổi bật sư phạm */
@@ -93,8 +103,10 @@ st.markdown("""
     blockquote p strong,
     blockquote li strong,
     .callout-note strong, 
-    .callout-tip strong {
+    .callout-tip strong,
+    [data-testid="stMarkdownContainer"] blockquote strong {
         color: #dc2626 !important; /* Đỏ tươi nổi bật */
+        opacity: 1 !important;
         font-weight: 700 !important;
     }
 
@@ -102,8 +114,10 @@ st.markdown("""
     blockquote .katex,
     blockquote .katex-display,
     blockquote .katex-html,
-    blockquote .katex * {
+    blockquote .katex *,
+    [data-testid="stMarkdownContainer"] blockquote .katex {
         color: #dc2626 !important; /* Đỏ cho công thức toán cần nhớ */
+        opacity: 1 !important;
         font-weight: 600;
     }
     blockquote .katex .frac-line,
