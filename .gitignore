@@ -7,4 +7,6 @@ math8_progress.db
 .streamlit/secrets.toml
 inspect_temp.py
 fix_content_katex.py
+inspect_*
+screenshot_*
 .gemini/

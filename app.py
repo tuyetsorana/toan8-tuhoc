@@ -233,7 +233,6 @@ def process_markdown_formatting(content: str) -> str:
 
     return content
 
-@st.cache_data
 def load_lesson_sections(file_name: str) -> dict:
     """Đọc file markdown bài học và bóc tách thành 3 phân vùng: quick_notes, step_examples, sgk_content"""
     file_path = os.path.join(CONTENT_DIR, file_name)
