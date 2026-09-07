@@ -57,14 +57,59 @@ st.markdown("""
         box-shadow: 0 2px 4px rgba(0,0,0,0.04);
     }
     
-    /* Khung trích dẫn Blockquote chuẩn mực hỗ trợ 100% KaTeX */
+    /* Khung trích dẫn Blockquote / Thẻ Ghi Nhớ chuẩn mực hỗ trợ 100% KaTeX */
     blockquote {
-        background: #f8fafc;
+        background: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
         border-left: 5px solid #2563eb !important;
-        border-radius: 8px;
-        padding: 0.8rem 1.2rem !important;
-        margin: 1rem 0 !important;
-        color: #1e293b;
+        border-radius: 8px !important;
+        padding: 1rem 1.4rem !important;
+        margin: 1.2rem 0 !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    }
+    
+    /* Chữ thường trong thẻ ghi nhớ: Màu đen sắc nét, loại bỏ hoàn toàn màu xám mờ */
+    blockquote, 
+    blockquote p, 
+    blockquote li, 
+    blockquote span, 
+    blockquote ul, 
+    blockquote ol,
+    blockquote div {
+        color: #000000 !important; /* Đen tuyền 100% */
+        font-size: 1.05rem !important;
+        line-height: 1.7 !important;
+    }
+    
+    /* Chú thích in nghiêng: Màu đen sẫm rõ ràng */
+    blockquote em, blockquote em span {
+        color: #1e293b !important;
+        font-style: italic !important;
+    }
+
+    /* NHỮNG TỪ CẦN NHỚ (Chữ in đậm): Màu đỏ nổi bật sư phạm */
+    blockquote strong, 
+    blockquote b,
+    blockquote p strong,
+    blockquote li strong,
+    .callout-note strong, 
+    .callout-tip strong {
+        color: #dc2626 !important; /* Đỏ tươi nổi bật */
+        font-weight: 700 !important;
+    }
+
+    /* CÔNG THỨC TOÁN CẦN NHỚ: Hiển thị màu đỏ chuẩn mực */
+    blockquote .katex,
+    blockquote .katex-display,
+    blockquote .katex-html,
+    blockquote .katex * {
+        color: #dc2626 !important; /* Đỏ cho công thức toán cần nhớ */
+        font-weight: 600;
+    }
+    blockquote .katex .frac-line,
+    blockquote .katex .sqrt-line {
+        border-bottom-color: #dc2626 !important;
+        background: #dc2626 !important;
     }
     
     /* Khung ghi nhớ Callout */

@@ -13,15 +13,21 @@
 >
 > Là bậc của hạng tử có **bậc cao nhất** trong dạng thu gọn của đa thức đó.
 >
+> $$\text{Bậc của đa thức } P = \text{Bậc cao nhất trong các hạng tử}$$
+>
+> *(Lưu ý then chốt: Luôn luôn phải **thu gọn đa thức** trước khi xác định bậc)*
+>
 > ---
 >
 > **Quy trình thu gọn đa thức:**
+>
+> Nhóm các hạng tử đồng dạng với nhau, sau đó thực hiện cộng/trừ các hệ số:
 >
 > $$A = \text{Nhóm các hạng tử đồng dạng} \implies \text{Cộng trừ hệ số từng nhóm}$$
 >
 > ---
 >
-> **Tính giá trị đa thức:**
+> **Tính giá trị của đa thức:**
 >
 > Thay giá trị cụ thể của các biến vào đa thức đã thu gọn rồi tính toán giá trị số.
 
